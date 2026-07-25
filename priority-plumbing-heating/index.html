@@ -83,9 +83,12 @@
  .callbar a{display:block;text-align:center;background:var(--a);color:var(--aink);font-weight:800;padding:15px;
    border-radius:12px;text-decoration:none;font-size:17px}
  .postgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;text-align:left}
- .post{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;padding:18px 18px 20px;
+ .post{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;overflow:hidden;
    box-shadow:0 1px 3px rgba(0,0,0,.05)}
- .pkind{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0;
+ /* The square IS the product. Full-bleed to the card edge, 1:1 like the feed it's for. */
+ .pimg{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f2f4f7}
+ .pbody{padding:16px 18px 20px}
+ .pkind{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 8px;
    font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--mut)}
  .pnet{color:var(--a);font-weight:800}
  .post h3{font-size:17px;line-height:1.32;margin:10px 0 8px;color:var(--ink)}
@@ -118,12 +121,12 @@
 
  <section class="gallery"><p class="eyebrow kicker">Gallery</p><h2>A closer look</h2><div class="gwrap"><div class="gimg" style="background-image:url(photo2.jpg)"></div><div class="gimg" style="background-image:url(photo3.jpg)"></div><div class="gimg" style="background-image:url(photo4.jpg)"></div></div></section>
 
- <section class="band posts"><p class="eyebrow kicker">Content</p><h2>Three posts we wrote for you</h2><div class="postgrid"><article class="post"><p class="pkind">Post idea<span class="pnet">Facebook</span></p><h3>Myth vs fact about pouring grease down the drain in summer</h3><p class="pcap">Myth: hot water washes cooking grease safely down the drain. Fact: that grease cools inside your pipes, hardens, and slowly builds a clog you won&#x27;t see coming.</p></article><article class="post"><p class="pkind">Post idea<span class="pnet">Instagram</span></p><h3>Most people don&#x27;t know where their main shutoff valve is</h3><p class="pcap">Most homeowners can&#x27;t find their main water shutoff valve until water is already spreading across the floor. Here&#x27;s a two-minute job worth doing today: locate it.</p></article><article class="post"><p class="pkind">Post idea<span class="pnet">Facebook</span></p><h3>Local pride — why a local plumber answers faster</h3><p class="pcap">There&#x27;s a real advantage to hiring someone who actually lives and works in Warwick. We know the older homes and the newer builds.</p></article></div></section>
+ <section class="band posts"><p class="eyebrow kicker">Content</p><h2>Three posts we wrote for you</h2><div class="postgrid"><article class="post"><img class="pimg" src="post_01.png" alt="Sample post for Priority Plumbing &amp; Heating" loading="lazy" width="1080" height="1080"><div class="pbody"><p class="pkind">Post idea<span class="pnet">Facebook</span></p><p class="pcap">Myth: hot water washes cooking grease safely down the drain. Fact: that grease cools inside your pipes, hardens, and slowly builds a clog you won&#x27;t see coming.</p></div></article><article class="post"><img class="pimg" src="post_02.png" alt="Sample post for Priority Plumbing &amp; Heating" loading="lazy" width="1080" height="1080"><div class="pbody"><p class="pkind">Post idea<span class="pnet">Instagram</span></p><p class="pcap">Most homeowners can&#x27;t find their main water shutoff valve until water is already spreading across the floor. Here&#x27;s a two-minute job worth doing today: locate it.</p></div></article><article class="post"><img class="pimg" src="post_03.png" alt="Sample post for Priority Plumbing &amp; Heating" loading="lazy" width="1080" height="1080"><div class="pbody"><p class="pkind">Post idea<span class="pnet">Facebook</span></p><p class="pcap">There&#x27;s a real advantage to hiring someone who actually lives and works in Warwick. We know the older homes and the newer builds.</p></div></article></div></section>
 
  <section class="band about">
    <p class="eyebrow kicker">About</p>
    <h2>Your neighborhood plumber</h2>
-   <p class="lead">Priority Plumbing &amp; Heating serves homes and businesses across Warwick with dependable plumbing, heating, and cooling. From leak repairs and boiler service to installations and system maintenance, we&#x27;re here to help your neighbors stay comfortable.</p>
+   <p class="lead">Priority Plumbing &amp; Heating serves homes and businesses across Warwick with plumbing, heating, and cooling services. From repairs and installations to boiler work and drain cleaning, we&#x27;re your local team for keeping things running comfortably.</p>
    <ul class="values">
      <li><span class="ck">✓</span><div><b>Local &amp; independent</b><span>A neighbor you can count on — not a call center.</span></div></li>
      <li><span class="ck">✓</span><div><b>Clear, honest communication</b><span>Straight answers and no runaround, start to finish.</span></div></li>
