@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jomar Painting, LLC — Painting Contractor in Warwick, RI</title>
+<meta name="description" content="Jomar Painting, LLC is an owner-operated painting company in Warwick, Rhode Island. Established 1996. Call (401) 500-6664 for an estimate.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+:root{
+  --ink:#1c2530;
+  --deep:#12324f;
+  --steel:#26597f;
+  --gold:#d9a520;
+  --gold-soft:#f6e49a;
+  --paper:#f4f1ea;
+  --line:#d8d2c6;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.6;
+}
+a{color:inherit;}
+
+/* Call bar */
+.callbar{
+  position:sticky;top:0;z-index:50;
+  background:var(--deep);
+  color:#fff;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:10px 16px;
+  border-bottom:3px solid var(--gold);
+}
+.callbar .brand{
+  font-weight:700;letter-spacing:.5px;font-size:15px;
+}
+.callbar .brand span{color:var(--gold-soft);}
+.callbar a.call{
+  background:var(--gold);
+  color:#231c00;
+  text-decoration:none;
+  font-weight:700;
+  padding:8px 14px;
+  border-radius:4px;
+  font-size:15px;
+  white-space:nowrap;
+}
+
+/* Hero */
+.hero{
+  background:
+    linear-gradient(135deg,#0d2a44 0%,#173e5f 55%,#26597f 100%);
+  color:#fff;
+  padding:64px 20px 72px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;left:0;bottom:0;width:100%;height:8px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-soft),var(--gold));
+}
+.hero .wrap{max-width:900px;margin:0 auto;}
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:13px;
+  color:var(--gold-soft);
+  margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(2rem,6vw,3.6rem);
+  font-weight:300;
+  line-height:1.1;
+  margin-bottom:20px;
+}
+.hero h1 b{font-weight:700;color:var(--gold);}
+.hero p.lead{
+  font-size:1.15rem;
+  max-width:620px;
+  color:#e8eef3;
+  margin-bottom:32px;
+}
+.btn{
+  display:inline-block;
+  background:var(--gold);
+  color:#231c00;
+  text-decoration:none;
+  font-weight:700;
+  font-size:1.1rem;
+  padding:15px 30px;
+  border-radius:4px;
+  letter-spacing:.5px;
+}
+.btn:active{transform:translateY(1px);}
+
+/* Trust strip */
+.trust{
+  background:var(--ink);
+  color:#fff;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:0;
+}
+.trust div{
+  flex:1 1 200px;
+  text-align:center;
+  padding:26px 18px;
+  border-right:1px solid rgba(255,255,255,.12);
+}
+.trust div:last-child{border-right:none;}
+.trust .big{
+  font-size:1.5rem;
+  color:var(--gold);
+  font-weight:700;
+  display:block;
+  margin-bottom:4px;
+}
+.trust small{color:#c4ccd4;font-size:.85rem;letter-spacing:.5px;text-transform:uppercase;}
+
+/* Sections */
+section.content{max-width:960px;margin:0 auto;padding:60px 20px;}
+.section-head{
+  font-size:1.9rem;
+  font-weight:300;
+  color:var(--deep);
+  margin-bottom:8px;
+}
+.section-head b{font-weight:700;}
+.rule{
+  width:60px;height:4px;background:var(--gold);margin:14px 0 28px;
+}
+.story p{font-size:1.1rem;margin-bottom:18px;max-width:720px;}
+.quote{
+  border-left:5px solid var(--gold);
+  background:#fff;
+  padding:22px 26px;
+  font-size:1.25rem;
+  font-style:italic;
+  color:var(--deep);
+  margin-top:10px;
+}
+.quote span{
+  display:block;
+  font-style:normal;
+  font-size:.85rem;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#8a8272;
+  margin-top:12px;
+}
+
+/* Directory / contact ext */
+.exts{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:24px;
+  margin-top:30px;
+}
+.exts h3{color:var(--deep);font-weight:600;margin-bottom:14px;font-size:1.1rem;}
+.exts ul{list-style:none;}
+.exts li{
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;
+}
+.exts li:last-child{border-bottom:none;}
+.exts li b{color:var(--ink);}
+.exts li span{color:var(--steel);font-weight:700;}
+
+/* Contact */
+.contact{
+  background:linear-gradient(180deg,#12324f,#0d2033);
+  color:#fff;
+  padding:56px 20px 40px;
+  text-align:center;
+}
+.contact h2{font-weight:300;font-size:2rem;margin-bottom:8px;}
+.contact h2 b{color:var(--gold);font-weight:700;}
+.phone-big{
+  display:inline-block;
+  font-size:clamp(1.8rem,7vw,2.8rem);
+  font-weight:700;
+  color:#fff;
+  text-decoration:none;
+  background:var(--gold);
+  color:#231c00;
+  padding:16px 34px;
+  border-radius:6px;
+  margin:24px 0 10px;
+  letter-spacing:1px;
+}
+.contact .addr{color:#cdd7e0;font-size:1.05rem;line-height:1.9;margin-top:14px;}
+.contact .addr a{color:var(--gold-soft);}
+
+/* Footer */
+footer{
+  background:#0a1826;
+  color:#8fa0b0;
+  text-align:center;
+  padding:26px 20px;
+  font-size:.85rem;
+}
+footer a{color:#8fa0b0;text-decoration:none;}
+
+@media(max-width:600px){
+  .callbar .brand{font-size:13px;}
+  .hero{padding:48px 18px 56px;}
+  .trust div{flex:1 1 50%;border-right:1px solid rgba(255,255,255,.12);}
+}
+@media(max-width:360px){
+  .callbar{flex-direction:column;gap:8px;align-items:stretch;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="brand">JOMAR PAINTING<span>, LLC</span></div>
+  <a class="call" href="tel:+14015006664">&#9742; (401) 500-6664</a>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island</div>
+    <h1>Painters Warwick homeowners have trusted <b>since 1996.</b></h1>
+    <p class="lead">A small, owner-operated painting company serving Warwick and the surrounding Rhode Island communities. Call the main desk and talk to the people who do the work.</p>
+    <a class="btn" href="tel:+14015006664">Call for an Estimate</a>
+  </div>
+</header>
+
+<div class="trust">
+  <div>
+    <span class="big">Est. 1996</span>
+    <small>In their own words</small>
+  </div>
+  <div>
+    <span class="big">Owner-Operated</span>
+    <small>Local Warwick shop</small>
+  </div>
+  <div>
+    <span class="big">Free Estimates</span>
+    <small>Ask for the estimator</small>
+  </div>
+</div>
+
+<section class="content story">
+  <h2 class="section-head">Welcome to <b>Jomar Painting</b></h2>
+  <div class="rule"></div>
+  <p>Jomar Painting is a painting company based right here in Warwick, Rhode Island. The shop has been putting brush to wall since the late nineties &mdash; established, dependable, and easy to reach when you need a straight answer about your project.</p>
+  <blockquote class="quote">
+    Welcome to Jomar Painting. Established 1996.
+    <span>&mdash; Jomar Painting, in their own words</span>
+  </blockquote>
+
+  <div class="exts">
+    <h3>One number, two ways to reach us</h3>
+    <ul>
+      <li><b>Main Desk</b><span>(401) 500-6664 &nbsp;Ext. 1</span></li>
+      <li><b>Estimating</b><span>(401) 500-6664 &nbsp;Ext. 2</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Get your project <b>on the schedule</b></h2>
+  <a class="phone-big" href="tel:+14015006664">(401) 500-6664</a>
+  <div class="addr">
+    31 Graystone St, Warwick, RI 02886<br>
+    <a href="mailto:estimator@jomarpainting.com">estimator@jomarpainting.com</a>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f2f4f7"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Want exterior paint that actually lasts? Wash the siding, scrape loose flakes, then let it fully dry before a brush ever touches it. Skipping that step is why coastal Warwick homes peel early. Prep is the whole job.</p></div></div></article><article class="post"><div style="background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f2f4f7"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Most people don&#x27;t realize how hard the salt air off Narragansett Bay is on a paint job. Homes near the water need coatings built to breathe and resist moisture.</p></div></div></article><article class="post"><div style="background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f2f4f7"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call Jomar Painting, Llc and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+  &copy; Jomar Painting, LLC &nbsp;&middot;&nbsp; 31 Graystone St, Warwick, RI 02886 &nbsp;&middot;&nbsp; Site by Atlas Inc
+</footer>
+
+</body>
+</html>
