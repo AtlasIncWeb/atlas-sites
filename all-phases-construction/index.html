@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Phases Construction — General Contractor & Home Remodeling in Warwick, RI</title>
+<meta name="description" content="All Phases Construction is a general contractor in Warwick, RI offering home remodeling, kitchens, bathrooms, decks, restoration and demolition. Call (401) 402-9229 for a free estimate.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #1c1a17;
+    --charcoal: #262320;
+    --sand: #e9e2d6;
+    --paper: #f6f2ea;
+    --amber: #c46a1f;
+    --amber-dk: #a4551a;
+    --steel: #3f4a54;
+    --line: #d6cdbd;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+
+  /* Call bar */
+  .callbar {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--charcoal);
+    color: #f6f2ea;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 18px;
+    gap: 12px;
+    border-bottom: 3px solid var(--amber);
+  }
+  .callbar .name {
+    font-weight: 800; letter-spacing: .5px; font-size: 15px; text-transform: uppercase;
+  }
+  .callbar .name span { color: var(--amber); }
+  .callbar a.call {
+    background: var(--amber);
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(rgba(28,26,23,.72), rgba(38,35,32,.82)),
+      url('photo1.jpg') center/cover no-repeat, var(--charcoal);
+    color: #fff;
+    padding: 80px 22px 72px;
+  }
+  .hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: var(--sand);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 7vw, 54px);
+    line-height: 1.08;
+    font-weight: 800;
+    max-width: 720px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+  .hero h1 em {
+    color: var(--amber);
+    font-style: normal;
+  }
+  .hero p.lead {
+    margin-top: 20px;
+    font-size: clamp(16px, 2.4vw, 20px);
+    max-width: 600px;
+    color: #ece5d8;
+  }
+  .btn {
+    display: inline-block;
+    margin-top: 28px;
+    background: var(--amber);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: .5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  .btn:hover { background: var(--amber-dk); }
+
+  /* Trust strip */
+  .trust {
+    background: var(--steel);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 0;
+    padding: 22px 16px;
+  }
+  .trust div {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 6px 16px;
+    border-right: 1px solid rgba(255,255,255,.18);
+  }
+  .trust div:last-child { border-right: none; }
+  .trust .big { font-size: 24px; font-weight: 800; color: #ffd9a8; }
+  .trust .lbl { font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: #dfe3e7; }
+
+  /* Sections */
+  section.block { padding: 62px 22px; max-width: 1000px; margin: 0 auto; }
+  .kicker {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--amber-dk);
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: clamp(24px, 4.5vw, 34px);
+    line-height: 1.15;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--charcoal);
+  }
+  .about p { font-size: 17px; margin-bottom: 16px; max-width: 760px; }
+
+  /* Services */
+  .services { background: var(--sand); }
+  .svc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .svc {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-left: 5px solid var(--amber);
+    padding: 22px 22px;
+    border-radius: 3px;
+  }
+  .svc h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: var(--charcoal);
+  }
+
+  /* Photos */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4px;
+  }
+  .gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Testimonials */
+  .quotes { background: var(--charcoal); color: #f3ede2; }
+  .quotes .wrap { max-width: 1000px; margin: 0 auto; padding: 62px 22px; }
+  .quotes h2 { color: #fff; }
+  .qgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 10px;
+  }
+  blockquote {
+    background: rgba(255,255,255,.05);
+    border-top: 3px solid var(--amber);
+    padding: 22px;
+    font-size: 15px;
+    font-style: italic;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: 14px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--amber);
+    letter-spacing: .5px;
+  }
+
+  /* Contact */
+  .contact { background: var(--paper); }
+  .contact .wrap { max-width: 1000px; margin: 0 auto; padding: 62px 22px; }
+  .bignum {
+    display: inline-block;
+    font-size: clamp(30px, 7vw, 48px);
+    font-weight: 800;
+    color: var(--charcoal);
+    text-decoration: none;
+    margin: 6px 0 18px;
+  }
+  .bignum:hover { color: var(--amber-dk); }
+  .info { font-size: 17px; margin-bottom: 6px; }
+  .info a { color: var(--amber-dk); }
+
+  footer {
+    background: var(--charcoal);
+    color: #cbc3b6;
+    text-align: center;
+    padding: 26px 18px;
+    font-size: 14px;
+  }
+  footer .sep { color: var(--amber); margin: 0 8px; }
+
+  @media (max-width: 560px) {
+    .callbar .name { font-size: 13px; }
+    .hero { padding: 56px 18px 50px; }
+    .trust div { flex: 1 1 100%; border-right: none; border-bottom: 1px solid rgba(255,255,255,.15); padding-bottom: 12px; }
+    .trust div:last-child { border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="name">All Phases <span>Construction</span></div>
+  <a class="call" href="tel:+14014029229">Call (401) 402-9229</a>
+</div>
+
+<header class="hero">
+  <div class="eyebrow">Warwick, Rhode Island · General Contractor</div>
+  <h1>Professional experience. <em>Personalized, custom design.</em></h1>
+  <p class="lead">Full-service home remodeling from a team of general contractors — kitchens, bathrooms, decks, restoration and more, built well and built great.</p>
+  <a class="btn" href="tel:+14014029229">Call Now for a Free Estimate</a>
+</header>
+
+<div class="trust">
+  <div>
+    <div class="big">4.1 ★</div>
+    <div class="lbl">Google Rating</div>
+  </div>
+  <div>
+    <div class="big">Free</div>
+    <div class="lbl">Estimates</div>
+  </div>
+  <div>
+    <div class="big">Warwick, RI</div>
+    <div class="lbl">Locally Based</div>
+  </div>
+</div>
+
+<section class="block about">
+  <div class="kicker">Committed to Excellence</div>
+  <h2>We build the home you've been hoping for</h2>
+  <p>In their own words: “All Phases Construction produces spaces that are the highest level of quality, beauty, and modern efficiency by combining an old world ethos of craft and mastery with 21st-century principles of sustainability and livability.”</p>
+  <p>“What is important to you, is important to us. The mission of our company is to improve the quality of time you spend in your home.”</p>
+  <p>All Phases Construction is committed to helping you achieve your hopes and dreams for your home by offering a full-service experience with unparalleled customer service. Their team consists of highly skilled and dedicated professionals.</p>
+</section>
+
+<section class="services block" style="max-width:none;">
+  <div style="max-width:1000px;margin:0 auto 30px;">
+    <div class="kicker">Our Services</div>
+    <h2>What we do</h2>
+  </div>
+  <div class="svc-grid">
+    <div class="svc"><h3>Home Remodeling</h3></div>
+    <div class="svc"><h3>Kitchens</h3></div>
+    <div class="svc"><h3>Bathrooms</h3></div>
+    <div class="svc"><h3>Decks / Patios</h3></div>
+    <div class="svc"><h3>Restoration</h3></div>
+    <div class="svc"><h3>Demolition</h3></div>
+  </div>
+</section>
+
+<div class="gallery">
+  <img src="photo1.jpg" alt="All Phases Construction project">
+  <img src="photo2.jpg" alt="All Phases Construction project">
+  <img src="photo3.jpg" alt="All Phases Construction project">
+  <img src="photo4.jpg" alt="All Phases Construction project">
+</div>
+
+<section class="quotes">
+  <div class="wrap">
+    <div class="kicker" style="color:var(--amber);">Testimonials</div>
+    <h2>In our clients' words</h2>
+    <div class="qgrid">
+      <blockquote>
+        “All Phases Construction does not disappoint! From start to finish my husband and I are extremely satisfied. From our initial conversation all the way down to the final results have been nothing less than an incredible experience. You will not be disappointed!”
+        <cite>— Kenneth F</cite>
+      </blockquote>
+      <blockquote>
+        “We hired All Phases Construction to complete a new deck and to remodel our kitchen. We're absolutely please with the outcome, once again. I never worry that the workmanship will be anything less than perfect. Rick and his team are very friendly, professional, dependable, and always answer any questions that we have. 5-STARS!”
+        <cite>— Kim S</cite>
+      </blockquote>
+      <blockquote>
+        “Working with All Phase Construction was the best decision that we have ever made. They are professional, reliable, and very experienced as well. We will definitely be using them again and highly recommend them to anyone that is looking for home remodeling services.”
+        <cite>— John L</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="kicker">Get In Touch</div>
+    <h2>Call now for a free estimate</h2>
+    <a class="bignum" href="tel:+14014029229">(401) 402-9229</a>
+    <p class="info"><strong>Email:</strong> <a href="mailto:allphasesconstruction11@gmail.com">allphasesconstruction11@gmail.com</a></p>
+    <p class="info"><strong>Address:</strong> 100 Bellows St, Warwick, RI 02888</p>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f2f4f7"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Most people don&#x27;t realize how hard Warwick&#x27;s coastal salt air is on exterior trim and fasteners. Corrosion-resistant materials on the sunny, breezy side of the house pay off for years.</p></div></div></article><article class="post"><div style="background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f2f4f7"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Building a deck this summer? Set it where you catch the evening shade, not the afternoon glare, and leave room for a real dining setup. Small planning steps make a huge difference in how much you actually use it.</p></div></div></article><article class="post"><div style="background:#fff;border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#f2f4f7"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call All Phases Construction and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+  © All Phases Construction <span class="sep">·</span> Site by Atlas Inc
+</footer>
+
+</body>
+</html>
