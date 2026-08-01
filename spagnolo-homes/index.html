@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spagnolo Homes | General Contractor in Warwick, RI</title>
+<meta name="description" content="Spagnolo Homes is an owner-operated Rhode Island general contractor for building, renovations, and remodeling. Registered, fully insured, and serving clients since 1995.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+:root{
+  --charcoal:#1f2422;
+  --stone:#3a3f3c;
+  --ochre:#b07a2c;
+  --ochre-light:#d49a44;
+  --paper:#f4f1ea;
+  --line:#d8d1c2;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--charcoal);
+  background:var(--paper);
+  line-height:1.6;
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15;}
+
+/* call bar */
+.callbar{
+  position:sticky;top:0;z-index:50;
+  background:var(--charcoal);
+  color:#fff;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:.6rem 1.1rem;
+  border-bottom:3px solid var(--ochre);
+}
+.callbar .name{font-family:Georgia,serif;font-weight:bold;letter-spacing:.5px;font-size:1.05rem;}
+.callbar a{
+  color:#fff;text-decoration:none;
+  background:var(--ochre);
+  padding:.5rem .9rem;border-radius:4px;
+  font-weight:bold;white-space:nowrap;font-size:.95rem;
+}
+
+/* hero */
+.hero{
+  position:relative;
+  background:
+    linear-gradient(rgba(20,24,22,.72),rgba(20,24,22,.82)),
+    url('photo1.jpg') center/cover no-repeat;
+  color:#fff;
+  padding:5rem 1.4rem 4.5rem;
+}
+.hero .eyebrow{
+  text-transform:uppercase;letter-spacing:3px;
+  font-size:.8rem;color:var(--ochre-light);font-weight:bold;
+  margin-bottom:1rem;
+}
+.hero h1{font-size:2.6rem;max-width:16ch;margin-bottom:1.1rem;}
+.hero p{font-size:1.15rem;max-width:44ch;color:#ece7dd;margin-bottom:1.8rem;}
+.btn{
+  display:inline-block;
+  background:var(--ochre);color:#fff;text-decoration:none;
+  padding:.95rem 1.6rem;border-radius:5px;
+  font-weight:bold;font-size:1.05rem;
+  border:2px solid var(--ochre);
+}
+.btn:hover{background:var(--ochre-light);border-color:var(--ochre-light);}
+
+/* trust strip */
+.trust{
+  background:var(--stone);color:#fff;
+  display:flex;flex-wrap:wrap;justify-content:center;
+  gap:1.5rem;padding:1.8rem 1.2rem;
+  text-align:center;
+}
+.trust .item{min-width:150px;}
+.trust .big{font-family:Georgia,serif;font-size:1.6rem;color:var(--ochre-light);display:block;}
+.trust .lbl{font-size:.85rem;letter-spacing:1px;text-transform:uppercase;color:#ddd;}
+
+/* sections */
+section{padding:3.5rem 1.4rem;}
+.wrap{max-width:960px;margin:0 auto;}
+.section-eyebrow{
+  text-transform:uppercase;letter-spacing:2px;
+  color:var(--ochre);font-weight:bold;font-size:.8rem;margin-bottom:.6rem;
+}
+h2{font-size:1.9rem;margin-bottom:1.2rem;}
+
+.mission{background:#fff;}
+.mission blockquote{
+  border-left:5px solid var(--ochre);
+  padding:.4rem 0 .4rem 1.4rem;
+  font-size:1.25rem;font-style:italic;color:var(--stone);
+  max-width:52ch;
+}
+.mission .attrib{margin-top:.9rem;font-style:normal;font-size:.9rem;color:#777;}
+
+.testimonial{background:var(--charcoal);color:#fff;}
+.testimonial blockquote{
+  font-family:Georgia,serif;font-size:1.4rem;line-height:1.4;
+  max-width:40ch;margin:0 auto;text-align:center;
+}
+.testimonial .attrib{display:block;margin-top:1.3rem;font-family:"Segoe UI",sans-serif;font-size:.95rem;color:var(--ochre-light);}
+
+.library{background:var(--paper);}
+.library p{max-width:56ch;margin-bottom:1rem;font-size:1.05rem;}
+
+/* gallery */
+.gallery{background:#fff;}
+.grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:.8rem;margin-top:1.5rem;
+}
+.grid img{width:100%;height:220px;object-fit:cover;border-radius:4px;display:block;}
+
+/* contact */
+.contact{background:var(--stone);color:#fff;text-align:center;}
+.contact h2{color:#fff;}
+.contact .phone{
+  display:inline-block;
+  font-family:Georgia,serif;font-size:2.1rem;font-weight:bold;
+  color:#fff;text-decoration:none;margin:.6rem 0 1rem;
+}
+.contact .phone:hover{color:var(--ochre-light);}
+.contact a.email{color:var(--ochre-light);}
+.contact .info{margin:.4rem 0;color:#e6e2d8;}
+.contact .links{margin-top:1.4rem;}
+.contact .links a{
+  color:#fff;text-decoration:none;border:1px solid var(--ochre-light);
+  padding:.5rem .9rem;border-radius:4px;margin:.3rem;display:inline-block;font-size:.9rem;
+}
+
+footer{background:var(--charcoal);color:#bbb;text-align:center;padding:2rem 1.4rem;font-size:.85rem;}
+footer span{display:block;margin:.2rem 0;}
+
+@media (max-width:560px){
+  .hero{padding:3.5rem 1.2rem 3rem;}
+  .hero h1{font-size:2rem;}
+  .callbar .name{font-size:.9rem;}
+  .callbar a{padding:.45rem .7rem;font-size:.85rem;}
+  .testimonial blockquote{font-size:1.15rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <span class="name">Spagnolo Homes</span>
+  <a href="tel:14019657245">Call (401) 965-7245</a>
+</div>
+
+<header class="hero">
+  <div class="eyebrow">Warwick, Rhode Island</div>
+  <h1>Quality. Craftsmanship. Experience.</h1>
+  <p>An owner-operated Rhode Island general contractor for building, renovations, and remodeling — registered and fully insured.</p>
+  <a class="btn" href="tel:14019657245">Call (401) 965-7245</a>
+</header>
+
+<div class="trust">
+  <div class="item"><span class="big">4.7★</span><span class="lbl">46 Google reviews</span></div>
+  <div class="item"><span class="big">Since 1995</span><span class="lbl">Serving Rhode Island</span></div>
+  <div class="item"><span class="big">Registered</span><span class="lbl">&amp; fully insured</span></div>
+</div>
+
+<section class="mission">
+  <div class="wrap">
+    <div class="section-eyebrow">Our Mission</div>
+    <h2>Honesty, integrity, attention to detail.</h2>
+    <blockquote>
+      "To provide our clients with the highest level of quality construction done with honesty and integrity, is our number one mission. We have successfully generated trust and referrals for over 20 years through client satisfaction, our professionalism and attention to detail."
+      <span class="attrib">— Spagnolo Homes, in their own words</span>
+    </blockquote>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="wrap">
+    <blockquote>
+      "I cannot rate Bob Spagnolo any higher because the scale only goes up to 5 stars. In all respects, Bob was meticulous in his work, cordial, and respectful of his clients' environment. If I had more projects, Bob would be the one I call without hesitation."
+      <span class="attrib">— Ian H.</span>
+    </blockquote>
+  </div>
+</section>
+
+<section class="library">
+  <div class="wrap">
+    <div class="section-eyebrow">Library Lane Condominiums</div>
+    <h2>Looking for the perfect condo property?</h2>
+    <p>This new, 8-unit property has incredible amenities, options to customize finishes and flooring, and is in an amazing location right by the award-winning Warwick Library.</p>
+    <a class="btn" href="https://www.spagnolohomesri.com/">View Our Work</a>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="section-eyebrow">Our Work</div>
+    <h2>A look at Spagnolo Homes.</h2>
+    <div class="grid">
+      <img src="photo1.jpg" alt="Spagnolo Homes project">
+      <img src="photo2.jpg" alt="Spagnolo Homes project">
+      <img src="photo3.jpg" alt="Spagnolo Homes project">
+      <img src="photo4.jpg" alt="Spagnolo Homes project">
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="section-eyebrow" style="color:var(--ochre-light)">Get in touch</div>
+    <h2>Start your project today.</h2>
+    <a class="phone" href="tel:14019657245">(401) 965-7245</a>
+    <p class="info"><a class="email" href="mailto:spagnolohomes@gmail.com">spagnolohomes@gmail.com</a></p>
+    <p class="info">22 North St, Warwick, RI 02886</p>
+    <div class="links">
+      <a href="https://www.spagnolohomesri.com/">Our Website</a>
+      <a href="https://www.facebook.com/spagnolohomesri/">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--charcoal,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Summer near the bay means humidity that finds its way into everything. Run bathroom fans a few minutes after every shower and crack basement windows on dry days. Small habits keep wood and drywall happy.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Most people don&#x27;t know salt air off the coast wears on siding and fasteners faster than inland weather does. Choosing materials built for Warwick&#x27;s shoreline saves you headaches down the road.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call Spagnolo Homes and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+  <span>© Spagnolo Homes</span>
+  <span>Site by Atlas Inc</span>
+</footer>
+
+</body>
+</html>
