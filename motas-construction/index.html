@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mota's Construction — General Contractor in West Warwick, RI</title>
+<meta name="description" content="Mota's Construction is an owner-operated general contractor in West Warwick, RI, offering custom work by consultation. Call (401) 304-5747.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+:root{
+  --charcoal:#22262b;
+  --steel:#3a4550;
+  --amber:#d98a2b;
+  --amber-dark:#b06c17;
+  --cream:#f4f0e9;
+  --line:#d8d1c4;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--charcoal);
+  background:var(--cream);
+  line-height:1.6;
+}
+a{color:inherit;}
+.callbar{
+  position:sticky;top:0;z-index:50;
+  background:var(--charcoal);
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:.6rem 1.1rem;
+  gap:1rem;
+  border-bottom:3px solid var(--amber);
+}
+.callbar .name{
+  font-weight:800;
+  letter-spacing:.03em;
+  text-transform:uppercase;
+  font-size:.95rem;
+}
+.callbar a.call{
+  background:var(--amber);
+  color:#1a1d21;
+  text-decoration:none;
+  font-weight:800;
+  padding:.5rem .9rem;
+  border-radius:3px;
+  white-space:nowrap;
+  font-size:.95rem;
+}
+
+.hero{
+  position:relative;
+  background:
+    linear-gradient(rgba(20,23,27,.78),rgba(20,23,27,.82)),
+    url("photo1.jpg") center/cover no-repeat;
+  color:#fff;
+  padding:4.5rem 1.2rem 4rem;
+}
+.hero .eyebrow{
+  text-transform:uppercase;
+  letter-spacing:.25em;
+  font-size:.8rem;
+  color:var(--amber);
+  font-weight:700;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:2.4rem;
+  line-height:1.1;
+  font-weight:800;
+  max-width:16ch;
+  margin-bottom:1rem;
+}
+.hero p.lead{
+  font-size:1.1rem;
+  max-width:44ch;
+  color:#e7e2d8;
+  margin-bottom:1.8rem;
+}
+.btn{
+  display:inline-block;
+  background:var(--amber);
+  color:#1a1d21;
+  text-decoration:none;
+  font-weight:800;
+  padding:.85rem 1.6rem;
+  border-radius:3px;
+  font-size:1.05rem;
+}
+.btn:hover{background:var(--amber-dark);color:#fff;}
+
+.trust{
+  background:var(--steel);
+  color:#fff;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:1rem 3rem;
+  padding:1.6rem 1.2rem;
+  text-align:center;
+}
+.trust .item{min-width:120px;}
+.trust .big{
+  display:block;
+  font-size:1.6rem;
+  font-weight:800;
+  color:var(--amber);
+}
+.trust .lbl{font-size:.85rem;color:#dcd6c9;}
+
+section.block{
+  max-width:900px;
+  margin:0 auto;
+  padding:3.2rem 1.2rem;
+}
+.block h2{
+  font-size:1.7rem;
+  font-weight:800;
+  margin-bottom:1rem;
+  color:var(--charcoal);
+  border-left:5px solid var(--amber);
+  padding-left:.7rem;
+}
+.block p{margin-bottom:1rem;font-size:1.05rem;}
+.quote{
+  background:#fff;
+  border:1px solid var(--line);
+  border-left:5px solid var(--amber);
+  padding:1.4rem 1.5rem;
+  font-style:italic;
+  font-size:1.1rem;
+  color:var(--steel);
+}
+.quote .attr{
+  display:block;
+  font-style:normal;
+  font-size:.85rem;
+  color:#8a8272;
+  margin-top:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:.6rem;
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 .6rem 2rem;
+}
+.gallery img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  display:block;
+  border-radius:2px;
+}
+
+.contact{
+  background:var(--charcoal);
+  color:#fff;
+  padding:3.4rem 1.2rem;
+  text-align:center;
+}
+.contact h2{
+  font-size:1.7rem;
+  font-weight:800;
+  margin-bottom:1.4rem;
+  color:#fff;
+}
+.contact .tel{
+  display:inline-block;
+  font-size:2rem;
+  font-weight:800;
+  color:var(--amber);
+  text-decoration:none;
+  margin-bottom:1.4rem;
+}
+.contact .meta{color:#d3cdc0;margin-bottom:.4rem;}
+.contact a.link{color:var(--amber);text-decoration:none;font-weight:600;}
+.socials{margin-top:1.6rem;}
+.socials a{
+  display:inline-block;
+  margin:0 .4rem;
+  color:#fff;
+  border:1px solid var(--amber);
+  padding:.5rem 1rem;
+  border-radius:3px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:.9rem;
+}
+.socials a:hover{background:var(--amber);color:#1a1d21;}
+
+footer{
+  background:#16191d;
+  color:#9a948a;
+  text-align:center;
+  padding:1.6rem 1.2rem;
+  font-size:.85rem;
+}
+footer .b{color:#cfc9bd;font-weight:700;}
+
+@media (max-width:600px){
+  .hero h1{font-size:1.85rem;}
+  .callbar .name{font-size:.8rem;}
+  .contact .tel{font-size:1.6rem;}
+  .gallery img{height:190px;}
+}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <span class="name">Mota's Construction</span>
+  <a class="call" href="tel:+14013045747">Call (401) 304-5747</a>
+</div>
+
+<header class="hero">
+  <div class="eyebrow">West Warwick, Rhode Island</div>
+  <h1>Custom construction, done by the people who build it.</h1>
+  <p class="lead">Mota's Construction is an owner-operated general contractor taking on custom work by consultation. Call to talk through your project.</p>
+  <a class="btn" href="tel:+14013045747">Call (401) 304-5747</a>
+</header>
+
+<div class="trust">
+  <div class="item">
+    <span class="big">5.0</span>
+    <span class="lbl">Google rating (2 reviews)</span>
+  </div>
+  <div class="item">
+    <span class="big">West Warwick</span>
+    <span class="lbl">Local &amp; owner-operated</span>
+  </div>
+  <div class="item">
+    <span class="big">Custom work</span>
+    <span class="lbl">By consultation</span>
+  </div>
+</div>
+
+<section class="block">
+  <h2>Interested in custom work?</h2>
+  <p>Mota's Construction takes on custom projects for homeowners in and around West Warwick. Every job starts with a conversation about what you're looking to build.</p>
+  <div class="quote">
+    "If you are interested in custom work and would like to schedule a consultation or you are just looking for some additional information, please take a moment…"
+    <span class="attr">Mota's Construction, in their own words</span>
+  </div>
+  <p>The fastest way to get started is a phone call. Reach out and set up a time to talk through the details.</p>
+</section>
+
+<section class="block" style="padding-top:0;">
+  <h2>Recent work</h2>
+</section>
+<div class="gallery">
+  <img src="photo1.jpg" alt="Mota's Construction project">
+  <img src="photo2.jpg" alt="Mota's Construction project">
+  <img src="photo3.jpg" alt="Mota's Construction work">
+  <img src="photo4.jpg" alt="Mota's Construction premises">
+</div>
+
+<section class="contact" id="contact">
+  <h2>Get in touch</h2>
+  <a class="tel" href="tel:+14013045747">(401) 304-5747</a>
+  <p class="meta">Email: <a class="link" href="mailto:motasconstruction@yahoo.com">motasconstruction@yahoo.com</a></p>
+  <p class="meta">75 Gough Ave, West Warwick, RI 02893</p>
+  <div class="socials">
+    <a href="https://www.motasconstruction.com/contact" target="_blank" rel="noopener">Website</a>
+    <a href="https://www.facebook.com/motasconstruction" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/motasconstruction/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--charcoal,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--cream,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Most folks don&#x27;t realize how many Warwick homes hide old knob-and-tube or plaster walls behind that classic New England charm. That&#x27;s not a problem, it&#x27;s a chance to renovate right. Curious what&#x27;s behind yours?</p></div></div></article><article class="post"><div style="background:var(--cream,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Here&#x27;s a screenshot-worthy tip: before summer entertaining, check your deck&#x27;s ledger board where it meets the house. That connection carries the load, and near the bay salt air wears it faster.</p></div></div></article><article class="post"><div style="background:var(--cream,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call Mota&#x27;s Construction and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+  <p>&copy; Mota's Construction &nbsp;|&nbsp; 75 Gough Ave, West Warwick, RI 02893</p>
+  <p class="b">Site by Atlas Inc</p>
+</footer>
+
+</body>
+</html>
