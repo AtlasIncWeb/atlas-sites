@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cobra Pest Control — Rhode Island Exterminator in Warwick, RI</title>
+<meta name="description" content="Cobra Pest Control is a family-run Rhode Island exterminator based in Warwick. Bed bugs, termites, mice, bats and more — with a free pest inspection.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --charcoal: #1c2321;
+    --deep: #10201a;
+    --venom: #2f7d3b;
+    --venom-bright: #4caf50;
+    --gold: #d9a441;
+    --paper: #f4f2ec;
+    --line: #3a4340;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--charcoal);
+    background: var(--paper);
+    line-height: 1.55;
+  }
+  a { color: inherit; }
+
+  /* Call bar */
+  .callbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--deep);
+    color: var(--paper);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 12px;
+    border-bottom: 3px solid var(--gold);
+  }
+  .callbar .brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    color: var(--gold);
+  }
+  .callbar a.call {
+    background: var(--venom-bright);
+    color: #06140a;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 0.95rem;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(rgba(10,20,15,0.82), rgba(10,20,15,0.88)),
+      url('photo1.png') center/cover no-repeat;
+    color: var(--paper);
+    padding: 70px 20px 60px;
+    text-align: left;
+  }
+  .hero-inner { max-width: 900px; margin: 0 auto; }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 18px;
+    max-width: 15ch;
+  }
+  .hero p.lead {
+    font-size: 1.15rem;
+    max-width: 46ch;
+    margin-bottom: 28px;
+    color: #e6e6df;
+  }
+  .btn-primary {
+    display: inline-block;
+    background: var(--venom-bright);
+    color: #06140a;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.15rem;
+  }
+  .btn-primary .sub { display:block; font-weight:600; font-size:0.75rem; letter-spacing:1px; text-transform:uppercase; opacity:0.8; }
+
+  /* Trust strip */
+  .trust {
+    background: var(--charcoal);
+    color: var(--paper);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+    border-bottom: 3px solid var(--gold);
+  }
+  .trust div {
+    flex: 1 1 200px;
+    padding: 22px 16px;
+    border-left: 1px solid var(--line);
+  }
+  .trust div:first-child { border-left: none; }
+  .trust .num { font-size: 1.7rem; font-weight: 800; color: var(--gold); }
+  .trust .lbl { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.85; }
+
+  section.pad { max-width: 960px; margin: 0 auto; padding: 60px 20px; }
+
+  h2 {
+    font-size: 1.9rem;
+    color: var(--deep);
+    margin-bottom: 8px;
+  }
+  .rule { width: 60px; height: 4px; background: var(--gold); margin-bottom: 26px; }
+
+  .story p { margin-bottom: 16px; font-size: 1.05rem; }
+  .quote {
+    border-left: 5px solid var(--venom);
+    background: #ffffff;
+    padding: 20px 24px;
+    font-style: italic;
+    margin: 24px 0;
+    font-size: 1.05rem;
+  }
+  .quote .attr { display:block; font-style: normal; font-weight:700; margin-top:10px; color: var(--venom); font-size:0.9rem; }
+
+  /* Services */
+  .services { background: #ffffff; }
+  .svc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .svc-grid span {
+    background: var(--paper);
+    border: 1px solid #ddd8cc;
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-left: 4px solid var(--venom);
+  }
+
+  .guarantee {
+    background: var(--deep);
+    color: var(--paper);
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .guarantee h2 { color: var(--gold); }
+  .guarantee p { max-width: 52ch; margin: 14px auto 0; font-size: 1.1rem; }
+  .free {
+    display:inline-block;
+    margin-top: 24px;
+    background: var(--gold);
+    color: #201900;
+    font-weight: 800;
+    padding: 14px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  /* Photos */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+  .gallery img { width: 100%; height: 220px; object-fit: cover; display: block; }
+
+  /* Contact */
+  .contact { background: var(--charcoal); color: var(--paper); }
+  .contact h2 { color: var(--gold); }
+  .contact .rule { background: var(--venom-bright); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+  .bigphone {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--paper);
+    text-decoration: none;
+    background: var(--venom);
+    padding: 16px 24px;
+    border-radius: 10px;
+    margin: 10px 0 20px;
+  }
+  .contact a { color: var(--gold); }
+  .contact address { font-style: normal; line-height: 1.7; }
+  .social a {
+    display:inline-block;
+    margin-right: 14px;
+    margin-top: 8px;
+    color: var(--gold);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  footer {
+    background: var(--deep);
+    color: #9fae9f;
+    text-align: center;
+    padding: 26px 16px;
+    font-size: 0.85rem;
+  }
+  footer a { color: #9fae9f; }
+
+  @media (max-width: 640px) {
+    .hero { padding: 50px 18px 44px; }
+    .hero h1 { font-size: 1.9rem; }
+    .trust div { border-left: none; border-top: 1px solid var(--line); flex-basis: 100%; }
+    .trust div:first-child { border-top: none; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .gallery { grid-template-columns: 1fr 1fr; }
+    .gallery img { height: 150px; }
+    .bigphone { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <span class="brand">Cobra Pest Control</span>
+  <a class="call" href="tel:14012136652">Call (401) 213-6652</a>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Warwick, Rhode Island &middot; Family-Run Exterminator</p>
+    <h1>The local exterminator Rhode Island homes have trusted for years.</h1>
+    <p class="lead">Bed bugs, termites, mice, bats and more &mdash; handled personally by an exterminator who has been in the field since 1986.</p>
+    <a class="btn-primary" href="tel:14012136652">
+      Call for a Free Pest Inspection
+      <span class="sub">(401) 213-6652</span>
+    </a>
+  </div>
+</header>
+
+<div class="trust">
+  <div>
+    <div class="num">4.9 &#9733;</div>
+    <div class="lbl">89 Google Reviews</div>
+  </div>
+  <div>
+    <div class="num">Since 1986</div>
+    <div class="lbl">Rob in the field</div>
+  </div>
+  <div>
+    <div class="num">1-Year</div>
+    <div class="lbl">Guarantees</div>
+  </div>
+  <div>
+    <div class="num">Local</div>
+    <div class="lbl">Low overhead, low prices</div>
+  </div>
+</div>
+
+<section class="pad story">
+  <h2>Meet the people behind the work</h2>
+  <div class="rule"></div>
+  <p>Cobra Pest Control is a family-run Rhode Island exterminator. When you call, you deal with the people who actually do the work &mdash; not a rotating crew of subcontractors.</p>
+  <p><strong>Rob Sullivan</strong> provides "a practical tried and true approach and is always thinking outside of the box," in the company's own words. Rob has been in the pest control profession since 1986, with 30+ years spent in the field personally providing extermination services. He has attended hundreds of class hours above and beyond what the State of Rhode Island requires.</p>
+  <p><strong>Robin Gerdin</strong> handles customer service and, as they put it, "always provides exceptional Customer Service and goes above and beyond." If you need a fast and friendly answer or an appointment scheduled ASAP, Robin will go out of her way to accommodate you.</p>
+  <div class="quote">
+    "Rob is an extremely competent and capable individual who has provided service on my home since it was first constructed. He is both flexible and reliable, always willing to work with to satisfy my needs as a customer. He has shown great insight in problem solving as well &mdash; offering options to address concerns, not a 'one size fits all' type of response/approach. I recommend Rob without hesitation or reservation."
+    <span class="attr">&mdash; Mark Male, in their own words</span>
+  </div>
+</section>
+
+<section class="services pad">
+  <h2>Pests we handle</h2>
+  <div class="rule"></div>
+  <p style="margin-bottom:18px;">From the season's first ant trail to a bat in the attic, Cobra Pest Control treats the full range of Rhode Island pests:</p>
+  <div class="svc-grid">
+    <span>Bed Bugs</span>
+    <span>Termites</span>
+    <span>Mice</span>
+    <span>Rats</span>
+    <span>Bats</span>
+    <span>Carpenter Ants</span>
+    <span>Carpenter Bees</span>
+    <span>Ants</span>
+    <span>Cockroaches</span>
+    <span>Fleas</span>
+    <span>Ticks</span>
+    <span>Mosquitoes</span>
+    <span>Wasps</span>
+    <span>Hornets</span>
+    <span>Yellow Jackets</span>
+    <span>Spiders</span>
+    <span>Silverfish</span>
+    <span>Centipedes</span>
+    <span>Earwigs</span>
+    <span>Pantry Pests</span>
+    <span>Powder Post Beetles</span>
+    <span>Squirrels</span>
+    <span>Raccoons</span>
+    <span>Skunks</span>
+    <span>Opossums</span>
+    <span>Snakes</span>
+    <span>Rodent Proofing</span>
+    <span>Guano Cleaning</span>
+  </div>
+</section>
+
+<section class="guarantee">
+  <h2>One-year guarantees &mdash; including bed bugs and bat exclusion</h2>
+  <p>In their own words: "No one or no Pest Control Firm comes even close to these Guarantees. Since Cobra Pest Control is a 'Local Exterminator' overhead is extremely low and we pass those savings on to you."</p>
+  <a class="free" href="tel:14012136652">Call and get a FREE PEST INSPECTION</a>
+</section>
+
+<section class="gallery" aria-label="Photos of Cobra Pest Control's work">
+  <img src="photo1.png" alt="Cobra Pest Control at work">
+  <img src="photo3.jpg" alt="Cobra Pest Control at work">
+  <img src="photo4.jpg" alt="Cobra Pest Control at work">
+</section>
+
+<section class="contact pad">
+  <h2>Get in touch</h2>
+  <div class="rule"></div>
+  <div class="contact-grid">
+    <div>
+      <p>Call for your free pest inspection:</p>
+      <a class="bigphone" href="tel:14012136652">(401) 213-6652</a>
+      <p>Email: <a href="mailto:cobrapestcontrol@yahoo.com">cobrapestcontrol@yahoo.com</a></p>
+      <div class="social">
+        <a href="http://www.cobrapest.com/">Website</a>
+        <a href="https://www.facebook.com/CobraPestControl">Facebook</a>
+        <a href="http://instagram.com/cobrapestcontrol/">Instagram</a>
+      </div>
+    </div>
+    <div>
+      <p style="margin-bottom:8px;"><strong>Location</strong></p>
+      <address>
+        2845 Post Rd Ste 210<br>
+        Warwick, RI 02886
+      </address>
+      <p style="margin-top:16px;">Serving all of Rhode Island.</p>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--charcoal,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Wasps love building under eaves and deck railings this time of year. Do a slow walk-around your Warwick home once a week and check quiet corners for early nests the size of a golf ball.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Most people don&#x27;t realize mosquitoes only need a bottlecap of standing water to breed. In our coastal Warwick humidity, that&#x27;s clogged gutters, plant saucers, and a forgotten kiddie pool.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call Cobra Pest Control and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+  <p>&copy; Cobra Pest Control</p>
+  <p>Site by Atlas Inc</p>
+</footer>
+
+</body>
+</html>
