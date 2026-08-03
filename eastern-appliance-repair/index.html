@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eastern Appliance Repair — Home Appliance Repair in East Greenwich, RI</title>
+<meta name="description" content="Eastern Appliance Repair — dependable home appliance repair serving all of Rhode Island. Refrigerators, stoves, ovens, washers, dryers, A/C and more. Call (401) 500-3832.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+:root{
+  --steel:#1c2b3a;
+  --steel-dark:#12202c;
+  --amber:#e8a318;
+  --amber-dark:#c8850a;
+  --ice:#eef3f7;
+  --line:#c9d6e0;
+  --ink:#16222d;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--ice);
+  line-height:1.55;
+}
+a{color:inherit;}
+
+/* Call bar */
+.callbar{
+  position:sticky;top:0;z-index:50;
+  background:var(--steel-dark);
+  color:#fff;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:.55rem 1rem;
+  gap:.75rem;
+  border-bottom:3px solid var(--amber);
+}
+.callbar .name{font-weight:700;letter-spacing:.02em;font-size:.95rem;}
+.callbar a.call{
+  background:var(--amber);color:var(--steel-dark);
+  text-decoration:none;font-weight:800;
+  padding:.5rem .9rem;border-radius:6px;
+  white-space:nowrap;font-size:.95rem;
+}
+
+/* Hero */
+.hero{
+  position:relative;
+  background:
+    linear-gradient(rgba(18,32,44,.82),rgba(18,32,44,.88)),
+    url('photo1.jpg') center/cover no-repeat;
+  color:#fff;
+  padding:3.5rem 1.25rem 3rem;
+  text-align:center;
+}
+.hero .eyebrow{
+  text-transform:uppercase;letter-spacing:.22em;
+  font-size:.78rem;color:var(--amber);font-weight:700;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:2.2rem;line-height:1.15;
+  max-width:18ch;margin:0 auto .9rem;
+  font-weight:800;
+}
+.hero p.lead{
+  max-width:44ch;margin:0 auto 1.6rem;
+  font-size:1.08rem;color:#dbe6ef;
+}
+.btn{
+  display:inline-block;text-decoration:none;
+  background:var(--amber);color:var(--steel-dark);
+  font-weight:800;font-size:1.15rem;
+  padding:.85rem 1.6rem;border-radius:8px;
+  box-shadow:0 6px 18px rgba(0,0,0,.3);
+}
+.btn:hover{background:var(--amber-dark);}
+.hero .sub{margin-top:1rem;font-size:.9rem;color:#c3d2df;}
+
+/* Trust strip */
+.trust{
+  background:#fff;
+  display:flex;flex-wrap:wrap;justify-content:center;
+  gap:1px;
+  border-bottom:1px solid var(--line);
+}
+.trust .item{
+  flex:1 1 160px;
+  text-align:center;
+  padding:1.4rem 1rem;
+  border-left:1px solid var(--line);
+}
+.trust .item:first-child{border-left:none;}
+.trust .big{font-size:1.5rem;font-weight:800;color:var(--steel);}
+.trust .big span{color:var(--amber-dark);}
+.trust .lbl{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:#5a6b78;margin-top:.25rem;}
+
+/* Sections */
+section{padding:2.75rem 1.25rem;}
+.wrap{max-width:960px;margin:0 auto;}
+h2{
+  font-size:1.6rem;color:var(--steel);
+  margin-bottom:1.1rem;font-weight:800;
+}
+h2 .accent{color:var(--amber-dark);}
+
+.intro p{font-size:1.05rem;margin-bottom:1rem;max-width:60ch;}
+.quote{
+  border-left:4px solid var(--amber);
+  padding:.4rem 0 .4rem 1.2rem;
+  font-style:italic;color:#34434f;
+  margin:1.2rem 0;font-size:1.1rem;max-width:60ch;
+}
+.quote cite{display:block;font-style:normal;font-size:.85rem;color:#6b7a86;margin-top:.4rem;}
+
+/* Services */
+.services{background:var(--steel);color:#eef3f7;}
+.services h2{color:#fff;}
+.svc-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:.9rem;margin-top:1.3rem;
+}
+.svc-grid div{
+  background:var(--steel-dark);
+  border:1px solid #2c3f4f;
+  border-radius:8px;
+  padding:1rem .9rem;
+  font-weight:600;
+}
+.svc-grid div span{display:block;color:var(--amber);font-size:.8rem;font-weight:400;margin-top:.3rem;}
+.services .note{margin-top:1.4rem;color:#c3d2df;max-width:60ch;}
+
+/* Photos */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.75rem;}
+.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px;display:block;background:#dbe6ef;}
+
+/* Contact */
+.contact{background:#fff;border-top:1px solid var(--line);}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;}
+.telbig{
+  display:inline-block;text-decoration:none;
+  font-size:1.9rem;font-weight:800;color:var(--steel);
+  margin:.4rem 0 1rem;
+}
+.telbig:hover{color:var(--amber-dark);}
+.contact address{font-style:normal;line-height:1.7;color:#34434f;}
+.contact .hours{
+  background:var(--ice);border:1px solid var(--line);
+  border-radius:8px;padding:1.1rem 1.2rem;
+}
+.contact .hours .row{display:flex;justify-content:space-between;padding:.25rem 0;border-bottom:1px dashed var(--line);}
+.contact .hours .row:last-child{border-bottom:none;}
+.contact .links a{
+  display:inline-block;margin-top:.6rem;margin-right:1rem;
+  color:var(--amber-dark);font-weight:700;text-decoration:none;
+}
+.contact .links a:hover{text-decoration:underline;}
+
+footer{
+  background:var(--steel-dark);color:#9fb2c1;
+  text-align:center;padding:1.6rem 1rem;font-size:.85rem;
+}
+footer .b{color:#fff;font-weight:700;}
+
+@media (max-width:640px){
+  .hero h1{font-size:1.7rem;}
+  .contact-grid{grid-template-columns:1fr;}
+  .callbar .name{font-size:.82rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <span class="name">Eastern Appliance Repair</span>
+  <a class="call" href="tel:+14015003832">Call (401) 500-3832</a>
+</div>
+
+<header class="hero">
+  <div class="eyebrow">East Greenwich &middot; Serving all of Rhode Island</div>
+  <h1>Home Appliance Repair You Can Count On</h1>
+  <p class="lead">Refrigerator not staying cold? Stove that won't heat, or a washer that won't wash? We diagnose and repair home appliances across Rhode Island.</p>
+  <a class="btn" href="tel:+14015003832">Call for Repair Service</a>
+  <div class="sub">We answer the phone 24 hours a day, 7 days a week.</div>
+</header>
+
+<div class="trust">
+  <div class="item">
+    <div class="big">4.6<span>★</span></div>
+    <div class="lbl">Google rating</div>
+  </div>
+  <div class="item">
+    <div class="big">19</div>
+    <div class="lbl">Customer reviews</div>
+  </div>
+  <div class="item">
+    <div class="big">24/7</div>
+    <div class="lbl">Calls answered</div>
+  </div>
+  <div class="item">
+    <div class="big">All of RI</div>
+    <div class="lbl">Service area</div>
+  </div>
+</div>
+
+<section class="intro">
+  <div class="wrap">
+    <h2>Dependable Appliance Repair <span class="accent">Experts</span></h2>
+    <p>Eastern Appliance Repair is a locally owned service based in East Greenwich, working throughout Rhode Island. When something in the house stops working, you want a straight diagnosis and a fast fix — that's the whole job, and it's the job we take pride in.</p>
+    <blockquote class="quote">
+      "Dependable Appliance Repair Experts with over 38 years of experience in the industry when it comes to diagnosing a problem with any home appliance."
+      <cite>— Eastern Appliance Repair, in their own words</cite>
+    </blockquote>
+    <blockquote class="quote">
+      "100% money back guarantee — if you're not satisfied, we're not satisfied."
+      <cite>— Eastern Appliance Repair, in their own words</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="services">
+  <div class="wrap">
+    <h2>What We Repair</h2>
+    <div class="svc-grid">
+      <div>Refrigerators<span>doesn't stay cold</span></div>
+      <div>Stoves<span>doesn't get hot</span></div>
+      <div>Ovens<span>can't bake with it</span></div>
+      <div>Washers<span>won't wash</span></div>
+      <div>Dryers<span>isn't working</span></div>
+      <div>A/C<span>not cooling</span></div>
+      <div>Dishwashers</div>
+      <div>Microwaves</div>
+    </div>
+    <p class="note">A factory authorized warranty company for repairs, and a certified warranty partner for Thor appliances and Kobe exhaust hoods. If it's a home appliance, call and describe the problem — we'll take it from there.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>A Look at the <span class="accent">Work</span></h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Eastern Appliance Repair work">
+      <img src="photo2.jpg" alt="Eastern Appliance Repair">
+      <img src="photo3.jpg" alt="Eastern Appliance Repair">
+      <img src="photo4.jpg" alt="Eastern Appliance Repair">
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Get in <span class="accent">Touch</span></h2>
+    <div class="contact-grid">
+      <div>
+        <p>Contact us by phone for emergency service, or send a message to ask about a repair.</p>
+        <a class="telbig" href="tel:+14015003832">(401) 500-3832</a>
+        <address>
+          90 Cooper Ln<br>
+          East Greenwich, RI 02818
+        </address>
+        <div class="links">
+          <a href="mailto:agustinamingote@gmail.com">Email us</a>
+          <a href="https://easternappliancerepair.com/" rel="noopener">Website</a>
+          <a href="https://www.facebook.com/Eastern" rel="noopener">Facebook</a>
+        </div>
+      </div>
+      <div class="hours">
+        <div class="row"><span>Monday – Saturday</span><span>24 hours</span></div>
+        <div class="row"><span>Sunday</span><span>24 hours</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Your dryer works twice as hard in humid August air. Pull the lint trap, then check the outside vent flap actually opens when it runs. A blocked vent traps heat and wears the machine out fast. Questions on yours?</p></div></div></article><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call Eastern Appliance Repair and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">A five-minute check today beats a weekend emergency later. Not sure what to look for? Ask us — Eastern Appliance Repair is happy to point you in the right direction.</p></div></div></article></div></section><footer>
+  <p class="b">© Eastern Appliance Repair</p>
+  <p>90 Cooper Ln, East Greenwich, RI 02818 &middot; (401) 500-3832</p>
+  <p>Site by Atlas Inc</p>
+</footer>
+
+</body>
+</html>
