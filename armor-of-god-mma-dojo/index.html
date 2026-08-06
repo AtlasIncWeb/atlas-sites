@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armor of God MMA Dojo &mdash; Boxing, BJJ &amp; Muay Thai in Warwick, RI</title>
+<meta name="description" content="Boxing, Brazilian Jiu-Jitsu, MMA, Muay Thai and wrestling at Armor of God MMA Dojo on Bellows Street in Warwick, Rhode Island. Evening classes, Sunday through Wednesday. Call (617) 797-2921.">
+<!-- Unpublished proposal. Must stay noindex until Armor of God MMA Dojo owns it. -->
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#16181c; --ink-2:#5a616c; --line:#dfdcd2;
+    --steel:#1e2733; --steel-dk:#131a23; --steel-lt:#eaeef3;
+    --brass:#9a7027; --brass-br:#d0a052; --brass-lt:#f7f0e1;
+    --paper:#f8f7f3; --white:#fff;
+    --serif:Georgia,"Iowan Old Style","Times New Roman",Times,serif;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.68 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--steel-dk);color:#fff;position:sticky;top:0;z-index:50;
+    border-bottom:1px solid #2b3543}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:14px;padding-top:11px;padding-bottom:11px;flex-wrap:wrap}
+  .mark{font-family:var(--serif);font-weight:700;font-size:1.06rem;line-height:1.15;
+    letter-spacing:.005em}
+  .mark small{display:block;font-family:system-ui,Arial,sans-serif;font-size:.62rem;
+    font-weight:700;letter-spacing:.19em;text-transform:uppercase;margin-top:4px;
+    color:var(--brass-br)}
+  .callbtn{display:inline-block;background:var(--brass);color:#fff;font-weight:700;
+    text-decoration:none;padding:10px 19px;border-radius:3px;font-size:1rem;
+    white-space:nowrap;letter-spacing:.01em}
+  .callbtn:hover{background:#b28430}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--steel);color:#fff;padding:74px 0 78px;
+    border-bottom:4px solid var(--brass)}
+  .eyebrow{color:var(--brass-br);font-weight:700;font-size:.72rem;letter-spacing:.2em;
+    text-transform:uppercase;margin-bottom:22px}
+  h1{font-family:var(--serif);font-size:clamp(2rem,5.2vw,3.3rem);line-height:1.12;
+    font-weight:700;max-width:16ch;letter-spacing:-.005em}
+  .hero p{margin-top:22px;font-size:1.1rem;max-width:52ch;color:#c3ccd7}
+  .hero .actions{margin-top:34px;display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1px solid #47566a;
+    padding:10px 19px;border-radius:3px}
+  .ghost:hover{border-color:var(--brass-br);color:var(--brass-br)}
+
+  /* ---------- trust strip ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:25px 22px}
+  .tcell b{display:block;font-family:var(--serif);font-size:1.22rem;line-height:1.25;
+    font-weight:700}
+  .tcell small{display:block;color:var(--ink-2);font-size:.87rem;margin-top:6px}
+
+  /* ---------- sections ---------- */
+  section{padding:64px 0}
+  h2{font-family:var(--serif);font-size:clamp(1.45rem,3vw,2rem);font-weight:700;
+    margin-bottom:13px;letter-spacing:-.005em}
+  .lede{color:var(--ink-2);max-width:60ch;font-size:1.04rem}
+
+  /* ---------- disciplines ---------- */
+  .mat{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:14px;margin-top:34px}
+  .disc{background:var(--white);border:1px solid var(--line);border-top:3px solid var(--brass);
+    border-radius:3px;padding:20px 18px}
+  .disc h3{font-family:var(--serif);font-size:1.12rem;font-weight:700;margin-bottom:6px}
+  .disc p{color:var(--ink-2);font-size:.92rem;line-height:1.55}
+
+  /* ---------- their words ---------- */
+  .words{background:var(--steel-lt);border-top:1px solid #d5dde6;
+    border-bottom:1px solid #d5dde6}
+  blockquote{font-family:var(--serif);font-size:clamp(1.12rem,2.5vw,1.42rem);
+    line-height:1.5;max-width:34ch;border-left:3px solid var(--brass);
+    padding-left:22px;margin-top:30px}
+  blockquote cite{display:block;font-family:system-ui,Arial,sans-serif;font-style:normal;
+    font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--brass);margin-top:16px}
+  .why{margin-top:30px;max-width:60ch;color:var(--ink-2);font-size:1.02rem}
+  .why + .why{margin-top:14px}
+
+  /* ---------- purpose list ---------- */
+  .purpose{list-style:none;margin-top:30px;max-width:62ch}
+  .purpose li{padding:15px 0 15px 30px;position:relative;border-top:1px solid var(--line);
+    font-size:1.02rem}
+  .purpose li::before{content:"";position:absolute;left:2px;top:23px;width:10px;height:10px;
+    background:var(--brass);transform:rotate(45deg)}
+
+  /* ---------- schedule ---------- */
+  .sched{background:var(--white);border-top:1px solid var(--line)}
+  .days{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    gap:14px;margin-top:32px}
+  .day{border:1px solid var(--line);border-radius:3px;padding:18px 18px 8px}
+  .day h3{font-family:var(--serif);font-size:1.06rem;font-weight:700;
+    padding-bottom:11px;border-bottom:1px solid var(--line)}
+  .day dl{display:grid;grid-template-columns:auto 1fr;gap:0 14px;margin-top:4px}
+  .day dt{color:var(--brass);font-weight:700;font-size:.9rem;padding:9px 0;
+    font-variant-numeric:tabular-nums}
+  .day dd{color:var(--ink-2);font-size:.94rem;padding:9px 0}
+  .note{margin-top:20px;font-size:.94rem;color:var(--ink-2)}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--steel-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c3ccd7}
+  .bignum{display:inline-block;margin-top:26px;font-family:var(--serif);
+    font-size:clamp(1.85rem,6vw,2.9rem);font-weight:700;color:var(--brass-br);
+    text-decoration:none;letter-spacing:-.01em}
+  .bignum:hover{color:#e0b877}
+  .anytime{display:block;margin-top:6px;font-size:.8rem;font-weight:700;
+    letter-spacing:.18em;text-transform:uppercase;color:#8f9bab}
+  .addr{margin-top:26px;color:#c3ccd7;font-size:1.02rem;line-height:1.9}
+  .addr strong{color:#fff}
+  .addr a{color:var(--brass-br)}
+  .hours{margin-top:20px;display:inline-block;background:rgba(208,160,82,.12);
+    border:1px solid rgba(208,160,82,.38);color:#e0b877;border-radius:3px;
+    padding:10px 16px;font-size:.94rem}
+
+  footer{background:#0d131a;color:#6d7a8a;font-size:.86rem;padding:24px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .trust .wrap{grid-template-columns:1fr}
+    section{padding:50px 0}
+    .hero{padding:54px 0 58px}
+    blockquote{max-width:none;padding-left:18px}
+  }
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">Armor of God MMA Dojo<small>Warwick, Rhode Island</small></div>
+    <a class="callbtn" href="tel:+16177972921">Call (617) 797-2921</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Bellows Street &middot; Warwick, RI</div>
+    <h1>Live like a Knight, Pray like a Knight</h1>
+    <p>Boxing, Brazilian Jiu-Jitsu, MMA, Muay Thai and wrestling &mdash; taught
+       in the evenings, to people who want more than a typical gym.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+16177972921">Call (617) 797-2921</a>
+      <a class="ghost" href="#schedule">See the schedule</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>Five disciplines</b>
+      <small>Boxing, BJJ, MMA, Muay Thai and wrestling under one roof</small>
+    </div>
+    <div class="tcell">
+      <b>Evenings, Sunday&ndash;Wednesday</b>
+      <small>Built around a work week &mdash; one hour is enough to start</small>
+    </div>
+    <div class="tcell">
+      <b>On the Cranston line</b>
+      <small>100 Bellows Street, Warwick &mdash; &ldquo;border of Cranston and Warwick&rdquo;</small>
+    </div>
+  </div>
+</div>
+
+<section id="mat">
+  <div class="wrap">
+    <h2>What you train here</h2>
+    <p class="lede">In their own words: &ldquo;At Armor of God Dojo, we offer top-notch
+       training in Boxing, Brazilian Jiu-Jitsu (BJJ), MMA, Muay Thai, and
+       Wrestling.&rdquo; Classes are held mostly on weekday evenings.</p>
+
+    <div class="mat">
+      <div class="disc">
+        <h3>Boxing</h3>
+        <p>Hands, footwork and the discipline of taking a shot without losing your head.</p>
+      </div>
+      <div class="disc">
+        <h3>Brazilian Jiu-Jitsu</h3>
+        <p>Grappling on the ground, learned slowly, with partners who watch out for you.</p>
+      </div>
+      <div class="disc">
+        <h3>Muay Thai</h3>
+        <p>Elbows, knees and clinch work &mdash; the striking art that uses everything.</p>
+      </div>
+      <div class="disc">
+        <h3>MMA</h3>
+        <p>Where the striking and the grappling stop being separate subjects.</p>
+      </div>
+      <div class="disc">
+        <h3>Wrestling</h3>
+        <p>Getting the takedown, and getting back up. The base underneath the rest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="words">
+  <div class="wrap">
+    <h2>Not a gym. A dojo.</h2>
+    <p class="lede">Walking into a new room is the hard part. Their answer to that is on
+       their own website, and it is worth reading before you call.</p>
+
+    <blockquote>
+      &ldquo;We understand that stepping into a new gym can be intimidating, but this
+      isn&rsquo;t a gym, it&rsquo;s a dojo; and I&rsquo;m not a random pro athlete,
+      I&rsquo;m a real teacher and lifelong coach.&rdquo;
+      <cite>Armor of God Dojo, in their own words</cite>
+    </blockquote>
+
+    <p class="why">They say you will be training with a multiple time world champion coach
+       with an intense, rewarded and extensive teaching background &mdash; someone who has
+       been going to seminars on how people think, learn and feel since childhood.</p>
+    <p class="why">And the students do the rest: &ldquo;Your fellow students are always
+       happy to partner up the new guys, they are loving people who will actually care
+       about your safety and learning experience.&rdquo;</p>
+  </div>
+</section>
+
+<section id="purpose">
+  <div class="wrap">
+    <h2>Training with a purpose</h2>
+    <p class="lede">This is a Christian dojo, and it is direct about why that changes what
+       happens on the mats. It is not only about physical fitness.</p>
+
+    <ul class="purpose">
+      <li>Building the courage to stand up for yourself and the people you love.</li>
+      <li>Friendships that are actually worth something, rooted in friendship and love.</li>
+      <li>A structured outlet for anger, anxiety and depression, and a way to manage stress.</li>
+      <li>A routine you can be proud of &mdash; &ldquo;even if it&rsquo;s just one hour a week.&rdquo;</li>
+      <li>A room where faith is a normal thing to talk about, with people who train like you do.</li>
+    </ul>
+
+    <p class="why">Their motto, &ldquo;Live like a knight and pray like a knight,&rdquo;
+       is how they describe the whole thing: living with a sense of purpose, ready to
+       answer the call for valor and truth, and the kind of calm, protective love that
+       keeps a community safe.</p>
+  </div>
+</section>
+
+<section class="sched" id="schedule">
+  <div class="wrap">
+    <h2>The schedule</h2>
+    <p class="lede">Evening classes, Sunday through Wednesday. Same three hours each
+       night, so you can pick the one that fits and keep it.</p>
+
+    <div class="days">
+      <div class="day">
+        <h3>Sunday</h3>
+        <dl>
+          <dt>6:30</dt><dd>Boxing</dd>
+          <dt>7:30</dt><dd>Muay Thai</dd>
+          <dt>8:30</dt><dd>BJJ</dd>
+        </dl>
+      </div>
+      <div class="day">
+        <h3>Monday</h3>
+        <dl>
+          <dt>6:30</dt><dd>Boxing</dd>
+          <dt>7:30</dt><dd>Muay Thai</dd>
+          <dt>8:30</dt><dd>BJJ</dd>
+        </dl>
+      </div>
+      <div class="day">
+        <h3>Tuesday</h3>
+        <dl>
+          <dt>6:30</dt><dd>Boxing</dd>
+          <dt>7:30</dt><dd>Muay Thai</dd>
+          <dt>8:30</dt><dd>BJJ</dd>
+        </dl>
+      </div>
+      <div class="day">
+        <h3>Wednesday</h3>
+        <dl>
+          <dt>6:30</dt><dd>Boxing</dd>
+          <dt>7:30</dt><dd>Muay Thai</dd>
+          <dt>8:30</dt><dd>BJJ</dd>
+        </dl>
+      </div>
+    </div>
+    <p class="note">Schedule as posted by the dojo. Call before your first night and they
+       will tell you what to bring.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Come stop by, and say hi</h2>
+    <p class="lede">That is their own invitation: &ldquo;No website could ever do this
+       dojo justice, so please come stop by, and say hi!&rdquo; And on the phone
+       number, their instruction is one word: anytime.</p>
+
+    <a class="bignum" href="tel:+16177972921">(617) 797-2921</a>
+    <span class="anytime">Call anytime</span>
+
+    <div class="addr">
+      <strong>Armor of God MMA Dojo</strong><br>
+      100 Bellows St Unit 43, Warwick, RI 02888<br>
+      <a href="mailto:armorofgoddojo@gmail.com">armorofgoddojo@gmail.com</a><br>
+      <a href="https://www.armorofgoddojo.com/">armorofgoddojo.com</a>
+    </div>
+
+    <div class="hours">Evening classes &middot; Sunday, Monday, Tuesday and Wednesday</div>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">reel · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Boxing, BJJ, MMA, Muay Thai and wrestling on Bellows Street in Warwick. New folks get partnered with someone who actually cares about your safety and your learning. Come stop by and say hi.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">photo · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Life gets boring without a routine. Pick an hour, put it on the calendar, show up. Evening classes Sunday through Wednesday: 6:30 Boxing, 7:30 Muay Thai, 8:30 BJJ.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">carousel · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Our motto, and what we mean by it: living with a sense of purpose, trained and ready to answer the call for valor and truth, and the calm, protective love that keeps our community safe.</p></div></div></article></div></section><footer>
+  <div class="wrap">
+    <div>&copy; Armor of God MMA Dojo</div>
+    <div>Site by Atlas Inc</div>
+  </div>
+</footer>
+
+</body>
+</html>
