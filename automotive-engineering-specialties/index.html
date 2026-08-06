@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automotive Engineering Specialties — Auto Repair in Warwick, RI</title>
+<meta name="description" content="Family owned auto repair on Warwick Avenue in Warwick, Rhode Island. Oil and filter changes, brakes, tire rotation and alignment, engine diagnostics, RI state inspection, exhaust and A/C service. Call (401) 463-8460.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#14171c; --ink-2:#586170; --line:#e0e2e6;
+    --steel:#232932; --steel-dk:#151a21; --steel-lt:#eef0f3;
+    --amber:#c2551d; --amber-dk:#9c4213; --amber-lt:#fbf0e7;
+    --paper:#f7f7f5; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--steel-dk);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:14px;padding-top:11px;padding-bottom:11px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.02rem;line-height:1.15}
+  .mark small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.17em;
+    text-transform:uppercase;margin-top:4px;color:#d8935f}
+  .callbtn{
+    display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 19px;border-radius:4px;
+    font-size:1.02rem;letter-spacing:-.01em;white-space:nowrap;
+  }
+  .callbtn:hover{background:var(--amber-dk)}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--steel);color:#fff;padding:64px 0 70px;
+    border-bottom:5px solid var(--amber)}
+  .eyebrow{color:#a8b4c4;font-weight:700;font-size:.78rem;letter-spacing:.17em;
+    text-transform:uppercase;margin-bottom:18px}
+  h1{font-size:clamp(2rem,5.2vw,3.35rem);line-height:1.06;letter-spacing:-.025em;
+    font-weight:800;max-width:16ch}
+  .hero p{margin-top:20px;font-size:1.12rem;max-width:52ch;color:#c3ccd8}
+  .hero .actions{margin-top:30px;display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #46505f;
+    padding:11px 19px;border-radius:4px}
+  .ghost:hover{border-color:#d8935f;color:#d8935f}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:25px 22px;text-align:center}
+  .tcell b{display:block;font-size:1.38rem;letter-spacing:-.02em;line-height:1.2;color:var(--ink)}
+  .tcell .stars{color:var(--amber);letter-spacing:.08em;font-size:1.05rem}
+  .tcell small{display:block;color:var(--ink-2);font-size:.85rem;margin-top:5px}
+
+  /* ---------- sections ---------- */
+  section{padding:62px 0}
+  h2{font-size:clamp(1.45rem,3vw,2rem);letter-spacing:-.02em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:60ch;font-size:1.04rem}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:38px}
+  .panel{border-radius:8px;padding:30px;border:1px solid var(--line)}
+  .panel.keep{background:var(--steel-lt);border-color:#d6dbe2}
+  .panel.fix{background:var(--amber-lt);border-color:#eeddcc}
+  .panel .k{font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+  .panel.keep .k{color:var(--steel)}
+  .panel.fix .k{color:var(--amber-dk)}
+  .panel h3{font-size:1.28rem;margin:10px 0 12px;letter-spacing:-.015em}
+  .panel p{color:var(--ink-2);font-size:.97rem}
+  .panel ul{list-style:none;margin-top:16px}
+  .panel li{padding:9px 0 9px 23px;position:relative;border-top:1px solid rgba(0,0,0,.07);
+    font-size:.96rem}
+  .panel li::before{content:"";position:absolute;left:2px;top:16px;width:8px;height:8px}
+  .panel.keep li::before{background:var(--steel)}
+  .panel.fix li::before{background:var(--amber)}
+
+  /* ---------- shop ---------- */
+  .shop{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  blockquote{margin-top:26px;border-left:4px solid var(--amber);padding:4px 0 4px 22px;
+    font-size:1.16rem;line-height:1.55;max-width:54ch;letter-spacing:-.01em}
+  blockquote cite{display:block;margin-top:12px;font-style:normal;font-size:.84rem;
+    letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);font-weight:700}
+  .facts{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .fact{border-top:2px solid var(--steel);padding-top:14px}
+  .fact b{display:block;font-size:1.02rem;letter-spacing:-.01em;margin-bottom:5px}
+  .fact span{color:var(--ink-2);font-size:.96rem}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--steel-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#c3ccd8}
+  .bignum{display:inline-block;margin-top:24px;font-size:clamp(1.85rem,6vw,2.9rem);
+    font-weight:800;letter-spacing:-.025em;color:#e08a4c;text-decoration:none}
+  .bignum:hover{color:#efa572}
+  .addr{margin-top:20px;color:#c3ccd8;font-size:1.01rem;line-height:1.9}
+  .addr a{color:#e08a4c;text-decoration:none}
+  .addr a:hover{text-decoration:underline}
+  .hours{margin-top:16px;display:inline-block;background:rgba(224,138,76,.13);
+    border:1px solid rgba(224,138,76,.42);color:#efa572;border-radius:6px;
+    padding:10px 16px;font-size:.94rem}
+
+  footer{background:#0d1116;color:#6b7787;font-size:.86rem;padding:24px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .two{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    .facts{grid-template-columns:1fr}
+    section{padding:48px 0}
+    .hero{padding:46px 0 52px}
+  }
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">AUTOMOTIVE ENGINEERING SPECIALTIES<small>Auto Repair · Warwick, RI</small></div>
+    <a class="callbtn" href="tel:+14014638460">(401) 463-8460</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island</div>
+    <h1>The service center on Warwick Ave.</h1>
+    <p>A family owned and operated shop with certified technicians, run by a Warwick
+       native who grew up a few minutes away — and who has put a new alignment machine
+       and state of the art diagnostic software in the bays.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14014638460">Call (401) 463-8460</a>
+      <a class="ghost" href="#services">What we service</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b><span class="stars">★★★★★</span></b>
+      <small>5.0 across 66 Google reviews</small>
+    </div>
+    <div class="tcell">
+      <b>Family owned</b>
+      <small>And operated, on Warwick Avenue</small>
+    </div>
+    <div class="tcell">
+      <b>Mon–Fri</b>
+      <small>9:00am–5:00pm</small>
+    </div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we service</h2>
+    <p class="lede">Domestic and foreign, maintenance and repair, in one shop on Warwick
+       Avenue. A short list of our many services:</p>
+
+    <div class="two">
+      <div class="panel keep">
+        <div class="k">Scheduled &amp; routine</div>
+        <h3>Keeping it on the road</h3>
+        <p>The work that keeps a car from becoming a problem in the first place.</p>
+        <ul>
+          <li>Oil and filter change</li>
+          <li>Tire rotation and alignment</li>
+          <li>Battery replacement</li>
+          <li>State inspection</li>
+          <li>Windshield wiper replacement</li>
+        </ul>
+      </div>
+      <div class="panel fix">
+        <div class="k">Diagnosis &amp; repair</div>
+        <h3>When something's wrong</h3>
+        <p>A light on the dash, a noise, or heat that stopped working — we find out why.</p>
+        <ul>
+          <li>Engine diagnostics</li>
+          <li>Brake service</li>
+          <li>Heating and cooling system repair</li>
+          <li>Air conditioning service</li>
+          <li>Exhaust system repair</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shop">
+  <div class="wrap">
+    <h2>The shop</h2>
+    <p class="lede">A lot of the cars that pull into 1173 Warwick Avenue belong to families
+       that have been bringing them here a long time — plenty of them are second or even
+       third generation customers of the shop.</p>
+
+    <blockquote>
+      &ldquo;Committed to providing the best customer experience and highest quality
+      service.&rdquo;
+      <cite>In their own words</cite>
+    </blockquote>
+
+    <div class="facts">
+      <div class="fact">
+        <b>Owned by someone who grew up here</b>
+        <span>Eddy Pezzelli III, a Warwick native who grew up only a few minutes from the
+              current location, purchased the business.</span>
+      </div>
+      <div class="fact">
+        <b>Re-equipped since the handover</b>
+        <span>Countless upgrades have been made, including a new alignment machine and
+              state of the art diagnostic software.</span>
+      </div>
+      <div class="fact">
+        <b>A master technician on the floor</b>
+        <span>Stephen Panos, who has mastered his craft over a long career under the hood.</span>
+      </div>
+      <div class="fact">
+        <b>Certified technicians</b>
+        <span>Service appointments handled by certified technicians, in their own words,
+              &ldquo;to ensure optimal performance and reliability.&rdquo;</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <h2>Book an appointment</h2>
+    <p class="lede">Call the shop and tell us what the car is doing. We will get you on the
+       schedule and tell you what we find before we do the work.</p>
+    <a class="bignum" href="tel:+14014638460">(401) 463-8460</a>
+    <div class="addr">
+      <strong style="color:#fff">Automotive Engineering Specialties</strong><br>
+      1173 Warwick Ave, Warwick, RI 02888<br>
+      <a href="mailto:epezzelli@automotiveengineeringwarwick.com">epezzelli@automotiveengineeringwarwick.com</a><br>
+      <a href="http://automotiveengineeringwarwick.com/">automotiveengineeringwarwick.com</a>
+    </div>
+    <div class="hours">Monday–Friday 9:00am–5:00pm</div>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">photo · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">One of the upgrades that went in after the shop changed hands: a new alignment machine.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">photo · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Our master technician, Stephen Panos, has spent a long career under the hood — and that experience is what turns a strange noise into an actual answer.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">photo · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">We handle Rhode Island state inspections, along with oil and filter changes, brakes, tire rotation and alignment, and engine diagnostics. Domestic and foreign, all in one shop.</p></div></div></article></div></section><footer>
+  <div class="wrap">
+    <div>© Automotive Engineering Specialties</div>
+    <div>Site by Atlas Inc</div>
+  </div>
+</footer>
+
+</body>
+</html>
