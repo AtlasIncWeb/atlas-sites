@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pediatric Dental Care of Rhode Island — Pediatric Dentist in Warwick, RI</title>
+<meta name="description" content="Pediatric dentistry in Warwick, Rhode Island. Comprehensive dental care for children from birth to 18 — dental home, prevention, fluoride, sealants and cavities. Dr. Jason Hencler, DMD. Call (401) 825-6062.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --ink:#16292c; --ink-2:#4f676c; --line:#e4ded2;
+    --teal:#14636b; --teal-dk:#0c464c; --teal-lt:#e7f2f1;
+    --coral:#e0693f; --coral-dk:#c1522c; --coral-lt:#fdefe8;
+    --paper:#fdfaf4; --white:#fff;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font:16px/1.68 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink); background:var(--paper); -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+
+  /* ---------- call bar ---------- */
+  .callbar{background:var(--teal-dk);color:#fff;position:sticky;top:0;z-index:50}
+  .callbar .wrap{display:flex;align-items:center;justify-content:space-between;
+    gap:14px;padding-top:11px;padding-bottom:11px;flex-wrap:wrap}
+  .mark{font-weight:800;letter-spacing:-.01em;font-size:1.02rem;line-height:1.15}
+  .mark small{display:block;font-size:.63rem;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;margin-top:3px;color:#8fc6c2}
+  .callbtn{display:inline-flex;align-items:center;gap:8px;background:var(--coral);color:#fff;
+    font-weight:800;text-decoration:none;padding:11px 19px;border-radius:999px;
+    font-size:1rem;letter-spacing:-.01em;white-space:nowrap}
+  .callbtn:hover{background:var(--coral-dk)}
+
+  /* ---------- hero ---------- */
+  .hero{background:var(--teal);color:#fff;padding:62px 0 68px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:6px;
+    background:repeating-linear-gradient(90deg,var(--coral) 0 44px,#8fc6c2 44px 88px)}
+  .eyebrow{color:#9ed3ce;font-weight:700;font-size:.78rem;letter-spacing:.16em;
+    text-transform:uppercase;margin-bottom:16px}
+  h1{font-size:clamp(2.05rem,5.4vw,3.4rem);line-height:1.06;letter-spacing:-.025em;
+    font-weight:800;max-width:16ch}
+  .hero p{margin-top:19px;font-size:1.12rem;max-width:52ch;color:#cfe6e3}
+  .hero .actions{margin-top:30px;display:flex;gap:13px;flex-wrap:wrap;align-items:center}
+  .ghost{color:#fff;text-decoration:none;font-weight:600;border:1.5px solid #3f7f85;
+    padding:11px 19px;border-radius:999px}
+  .ghost:hover{border-color:#9ed3ce;color:#9ed3ce}
+
+  /* ---------- trust ---------- */
+  .trust{background:var(--white);border-bottom:1px solid var(--line)}
+  .trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);padding:0}
+  .tcell{background:var(--white);padding:25px 22px;text-align:center}
+  .tcell b{display:block;font-size:1.36rem;letter-spacing:-.02em;line-height:1.2;color:var(--teal)}
+  .tcell small{display:block;color:var(--ink-2);font-size:.85rem;margin-top:5px}
+
+  /* ---------- sections ---------- */
+  section{padding:62px 0}
+  h2{font-size:clamp(1.45rem,3vw,2rem);letter-spacing:-.025em;font-weight:800;margin-bottom:12px}
+  .lede{color:var(--ink-2);max-width:60ch;font-size:1.04rem}
+
+  /* ---------- age one ---------- */
+  .agecard{background:var(--teal-lt);border:1px solid #cde5e2;border-radius:14px;
+    padding:34px;margin-top:32px}
+  .agecard .num{font-size:.72rem;font-weight:800;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--teal)}
+  .agecard blockquote{margin-top:12px;font-size:1.12rem;line-height:1.6;color:var(--ink);
+    max-width:62ch;border-left:3px solid var(--coral);padding-left:18px}
+  .agecard cite{display:block;margin-top:14px;font-style:normal;font-size:.88rem;
+    color:var(--ink-2);padding-left:21px}
+
+  /* ---------- services ---------- */
+  .svcs{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+  .card{border:1px solid var(--line);border-radius:12px;padding:26px;background:var(--paper)}
+  .card .k{width:34px;height:6px;border-radius:999px;background:var(--coral);display:block}
+  .card:nth-child(2) .k,.card:nth-child(4) .k{background:#7fc2bc}
+  .card h3{font-size:1.14rem;margin:14px 0 9px;letter-spacing:-.015em}
+  .card p{color:var(--ink-2);font-size:.96rem}
+
+  /* ---------- doctor ---------- */
+  .doc .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:34px;align-items:start}
+  .doc p{color:var(--ink-2);max-width:60ch;margin-top:14px}
+  .award{background:var(--coral-lt);border:1px solid #f6d9c9;border-radius:12px;padding:24px}
+  .award b{display:block;font-size:1.06rem;letter-spacing:-.015em;color:var(--coral-dk)}
+  .award span{display:block;margin-top:7px;color:var(--ink-2);font-size:.94rem}
+  .forms{margin-top:18px;font-size:.94rem;color:var(--ink-2)}
+
+  /* ---------- contact ---------- */
+  .contact{background:var(--teal-dk);color:#fff}
+  .contact h2{color:#fff}
+  .contact .lede{color:#cfe6e3}
+  .bignum{display:inline-block;margin-top:22px;font-size:clamp(1.85rem,6vw,2.9rem);
+    font-weight:800;letter-spacing:-.025em;color:#ffb894;text-decoration:none}
+  .bignum:hover{color:#ffd0b6}
+  .addr{margin-top:18px;color:#cfe6e3;font-size:1.01rem;line-height:1.9}
+  .addr a{color:#ffb894;text-decoration:none}
+  .addr strong{color:#fff}
+  .hours{margin-top:22px;display:grid;grid-template-columns:repeat(2,minmax(0,240px));
+    gap:0 26px;max-width:520px}
+  .hours div{display:flex;justify-content:space-between;gap:12px;
+    border-top:1px solid rgba(255,255,255,.14);padding:8px 0;font-size:.95rem;color:#cfe6e3}
+  .hours span{color:#fff;font-weight:600}
+
+  footer{background:#082e33;color:#6f9a9d;font-size:.87rem;padding:24px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+  @media (max-width:760px){
+    .grid{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr}
+    .doc .wrap{grid-template-columns:1fr}
+    .hours{grid-template-columns:1fr}
+    section{padding:48px 0}
+    .hero{padding:46px 0 52px}
+    .agecard{padding:24px}
+  }
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="wrap">
+    <div class="mark">PEDIATRIC DENTAL CARE OF RI<small>Pediatric Dentistry · Warwick</small></div>
+    <a class="callbtn" href="tel:+14018256062">Call (401) 825-6062</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island</div>
+    <h1>Your child&rsquo;s dental home.</h1>
+    <p>Comprehensive dental care for children from birth to 18, in a caring and
+       compassionate manner — for families throughout Southern New England.</p>
+    <div class="actions">
+      <a class="callbtn" href="tel:+14018256062">Call (401) 825-6062</a>
+      <a class="ghost" href="#services">What we do</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="tcell">
+      <b>4.8 out of 5</b>
+      <small>Across 397 Google reviews</small>
+    </div>
+    <div class="tcell">
+      <b>Birth to 18</b>
+      <small>Children only — that&rsquo;s all we do</small>
+    </div>
+    <div class="tcell">
+      <b>Top Dentist, 2020</b>
+      <small>RI Monthly award, Dr. Hencler</small>
+    </div>
+  </div>
+</div>
+
+<section id="age-one">
+  <div class="wrap">
+    <h2>Why the first visit happens by age one</h2>
+    <p class="lede">Most parents are surprised by how early it starts. The recommendation
+       we follow comes from the American Academy of Pediatric Dentistry, and it shapes
+       how this practice is run.</p>
+
+    <div class="agecard">
+      <div class="num">The dental home</div>
+      <blockquote>Every child establish a dental home by age 1. A dental home should
+        provide age specific comprehensive oral health care and include all aspects of
+        oral care delivery in an easily accessible, coordinated, and family oriented
+        manner.</blockquote>
+      <cite>The American Academy of Pediatric Dentistry, as cited by the practice</cite>
+    </div>
+  </div>
+</section>
+
+<section class="svcs" id="services">
+  <div class="wrap">
+    <h2>What we take care of</h2>
+    <p class="lede">In their own words: &ldquo;At Pediatric Dental Care of RI we are
+       dedicated to providing the highest quality comprehensive dental care to children
+       aged birth to 18 years old in a caring and compassionate manner.&rdquo;</p>
+
+    <div class="grid">
+      <div class="card">
+        <span class="k"></span>
+        <h3>Dental home</h3>
+        <p>Children who have a dental home are more likely to receive appropriate
+           preventative and routine oral health care.</p>
+      </div>
+      <div class="card">
+        <span class="k"></span>
+        <h3>Prevention</h3>
+        <p>Every child should have an age specific prevention plan. We work with children
+           and their parents to build an individualized plan to establish and maintain
+           oral health.</p>
+      </div>
+      <div class="card">
+        <span class="k"></span>
+        <h3>Cavities</h3>
+        <p>Dental caries remains the most prevalent chronic disease in children, and
+           affects all age groups of the population.</p>
+      </div>
+      <div class="card">
+        <span class="k"></span>
+        <h3>Fluoride</h3>
+        <p>Used appropriately, fluoride is both safe and effective in preventing and
+           controlling dental caries.</p>
+      </div>
+      <div class="card">
+        <span class="k"></span>
+        <h3>Sealants</h3>
+        <p>Sealants fill in the pits and fissures that are part of a child&rsquo;s natural
+           tooth anatomy, and play an important role in preventing tooth decay.</p>
+      </div>
+      <div class="card">
+        <span class="k"></span>
+        <h3>A fun, friendly office</h3>
+        <p>Dr. Hencler and his staff create an environment built to help your child feel
+           at ease while they&rsquo;re with us.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="doc">
+  <div class="wrap">
+    <div>
+      <h2>Meet Dr. Hencler</h2>
+      <p>Dr. Jason Hencler was born and raised in Rhode Island. He earned his DMD degree
+         from Tufts University School of Dental Medicine, then completed a two year
+         residency at St. Joseph Hospital in Providence, RI, where he earned an Advanced
+         Education in Pediatric Dentistry certificate.</p>
+      <p class="forms">Patient forms — appointment policy, health history, HIPAA, and a
+         sleep screening for ages 3 and up — are available in English and Spanish.</p>
+    </div>
+    <div class="award">
+      <b>2020 RI Monthly Top Dentist Award</b>
+      <span>Dr. Hencler is proud to have received the award, and to care for children
+        throughout Southern New England.</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Make us your child&rsquo;s dental home</h2>
+    <p class="lede">New patients from birth to 18 are welcome. Call the office and we&rsquo;ll
+       find a time that works around school and work.</p>
+    <a class="bignum" href="tel:+14018256062">(401) 825-6062</a>
+    <div class="addr">
+      <strong>Pediatric Dental Care of Rhode Island</strong><br>
+      1775 Bald Hill Rd Unit 4, Warwick, RI 02886<br>
+      <a href="mailto:pediatricdentalcareri@gmail.com">pediatricdentalcareri@gmail.com</a><br>
+      <a href="https://www.facebook.com/pediatricdentalcareRI/">Find us on Facebook</a>
+    </div>
+
+    <div class="hours">
+      <div>Monday <span>8am–5pm</span></div>
+      <div>Tuesday <span>By Appointment</span></div>
+      <div>Wednesday <span>8am–5pm</span></div>
+      <div>Thursday <span>8am–5pm</span></div>
+      <div>Friday <span>By Appointment</span></div>
+      <div>Saturday &amp; Sunday <span>Closed</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">photo · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">The American Academy of Pediatric Dentistry recommends every child establish a dental home by age 1. Earlier than most parents expect — and that&#x27;s the point.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">photo · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Dr. Jason Hencler was born and raised in Rhode Island. He earned his DMD from Tufts University School of Dental Medicine, then completed a two-year residency at St.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">photo · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Back teeth aren&#x27;t smooth. They have pits and fissures — natural grooves in a child&#x27;s tooth anatomy that a toothbrush bristle can&#x27;t always reach. A sealant fills those grooves in.</p></div></div></article></div></section><footer>
+  <div class="wrap">
+    <div>© Pediatric Dental Care of Rhode Island</div>
+    <div>Site by Atlas Inc</div>
+  </div>
+</footer>
+
+</body>
+</html>
