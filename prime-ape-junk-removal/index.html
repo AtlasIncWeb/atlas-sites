@@ -1,224 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prime Ape Junk Removal — Same-Day Junk Removal in Warwick, RI</title>
-<meta name="description" content="Locally owned, insured junk removal in Warwick, Rhode Island. Same-day cleanouts, furniture and appliance removal, demolition and oil tank removal. Call or text (401) 542-8581.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Ape Junk Removal | Same-Day Junk Removal in Warwick, RI</title>
+<meta name="description" content="Prime Ape Junk Removal is a locally owned, insured junk removal company in Warwick, RI offering same-day junk removal, cleanouts, demolition and more. Call or text (401) 542-8581.">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <style>
-  :root{
-    --ink:#14161a; --ink-2:#22262d; --steel:#5b6472; --line:#2c313a;
-    --paper:#f6f4f1; --paper-2:#ffffff;
-    --hi:#ff6a13; --hi-dark:#d94f00;
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --charcoal: #1c1f24;
+    --steel: #2b3038;
+    --banana: #ffc531;
+    --banana-dk: #e0a800;
+    --paper: #f4f2ee;
+    --line: #3a4049;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    background:var(--paper); color:var(--ink);
-    font:400 17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    padding-top:56px;
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--charcoal);
+    background: var(--paper);
+    line-height: 1.55;
   }
-  .wrap{width:100%;max-width:1060px;margin:0 auto;padding:0 22px}
+  a { color: inherit; }
 
-  /* ---- sticky call bar : the conversion ---- */
-  .callbar{
-    position:fixed; top:0; left:0; right:0; z-index:50;
-    background:var(--ink); color:#fff; height:56px;
-    display:flex; align-items:center; justify-content:space-between; gap:14px;
-    padding:0 18px; border-bottom:3px solid var(--hi);
+  /* Call bar */
+  .callbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--charcoal);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+    border-bottom: 3px solid var(--banana);
   }
-  .callbar .mark{font-weight:800;letter-spacing:-.02em;font-size:16px;line-height:1.1}
-  .callbar .mark span{color:var(--hi)}
-  .callbar a{
-    background:var(--hi); color:#14161a; text-decoration:none;
-    font-weight:800; font-size:15px; letter-spacing:.01em;
-    padding:10px 16px; border-radius:4px; white-space:nowrap;
+  .callbar .brand {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  .callbar .brand span { color: var(--banana); }
+  .callbar a.call {
+    background: var(--banana);
+    color: var(--charcoal);
+    text-decoration: none;
+    font-weight: 800;
+    padding: 9px 14px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 15px;
   }
 
-  /* ---- hero ---- */
-  .hero{background:var(--ink); color:#fff; padding:66px 0 58px; position:relative; overflow:hidden}
-  .hero::after{
-    content:""; position:absolute; right:-90px; top:-90px; width:420px; height:420px;
-    background:var(--hi); opacity:.07; transform:rotate(24deg);
+  /* Hero */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(rgba(20,22,26,0.78), rgba(20,22,26,0.82)),
+      url('photo1.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 72px 20px 80px;
+    text-align: center;
   }
-  .eyebrow{
-    color:var(--hi); font-weight:800; font-size:13px; letter-spacing:.16em;
-    text-transform:uppercase; margin-bottom:20px;
+  .hero .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: var(--banana);
+    font-weight: 700;
+    margin-bottom: 16px;
   }
-  h1{
-    font-size:clamp(38px,7.4vw,68px); line-height:.98; font-weight:800;
-    letter-spacing:-.035em; margin-bottom:22px; max-width:15ch;
+  .hero h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 800;
+    max-width: 760px;
+    margin: 0 auto 18px;
   }
-  h1 em{font-style:normal; color:var(--hi)}
-  .lede{font-size:clamp(17px,2.3vw,21px); color:#c8cdd6; max-width:56ch; margin-bottom:32px}
-  .cta{
-    display:inline-block; background:var(--hi); color:#14161a; text-decoration:none;
-    font-weight:800; font-size:20px; letter-spacing:-.01em;
-    padding:17px 30px; border-radius:5px;
+  .hero p.sub {
+    font-size: 19px;
+    max-width: 620px;
+    margin: 0 auto 30px;
+    color: #e8e8e8;
   }
-  .cta small{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;
-             text-transform:uppercase;opacity:.72;margin-bottom:2px}
+  .btn {
+    display: inline-block;
+    background: var(--banana);
+    color: var(--charcoal);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 19px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 0 var(--banana-dk);
+  }
+  .btn.small { font-size: 16px; padding: 12px 22px; }
+  .hero .texthint {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #cdd2d8;
+  }
 
-  /* ---- trust strip : verifiable facts only ---- */
-  .trust{background:var(--ink-2); border-top:1px solid var(--line); color:#fff}
-  .trust ul{list-style:none; display:flex; flex-wrap:wrap}
-  .trust li{
-    flex:1 1 200px; padding:24px 22px; border-right:1px solid var(--line);
+  /* Trust strip */
+  .trust {
+    background: var(--steel);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
   }
-  .trust li:last-child{border-right:0}
-  .trust b{display:block; font-size:23px; font-weight:800; letter-spacing:-.02em}
-  .trust b .star{color:var(--hi)}
-  .trust span{font-size:13px; color:#98a1ae; letter-spacing:.04em; text-transform:uppercase; font-weight:700}
+  .trust .item {
+    flex: 1 1 180px;
+    padding: 22px 16px;
+    border-right: 1px solid var(--line);
+  }
+  .trust .item:last-child { border-right: none; }
+  .trust .big {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--banana);
+    display: block;
+  }
+  .trust .lbl {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #cdd2d8;
+    margin-top: 4px;
+  }
+  .stars { color: var(--banana); letter-spacing: 2px; }
 
-  /* ---- sections ---- */
-  section{padding:64px 0}
-  .quote{background:var(--paper-2); border-top:1px solid #e4e0da; border-bottom:1px solid #e4e0da}
-  .quote p{
-    font-size:clamp(25px,4.3vw,40px); line-height:1.18; font-weight:800;
-    letter-spacing:-.03em; max-width:20ch;
+  /* Sections */
+  section.pad { padding: 56px 20px; }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: var(--charcoal);
   }
-  .quote cite{
-    display:block; margin-top:20px; font-style:normal; font-size:14px;
-    color:var(--steel); font-weight:700; letter-spacing:.05em; text-transform:uppercase;
+  .h2sub {
+    color: #66707c;
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
   }
-  h2{
-    font-size:13px; font-weight:800; letter-spacing:.16em; text-transform:uppercase;
-    color:var(--hi); margin-bottom:26px;
-  }
-  .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(268px,1fr)); gap:2px;
-        background:#e4e0da; border:1px solid #e4e0da}
-  .grid article{background:var(--paper-2); padding:26px 24px}
-  .grid h3{font-size:19px; font-weight:800; letter-spacing:-.02em; margin-bottom:9px}
-  .grid p{font-size:15.5px; color:#4b535f; line-height:1.55}
 
-  .areas{background:var(--ink); color:#fff}
-  .areas h2{color:var(--hi)}
-  .areas .towns{display:flex; flex-wrap:wrap; gap:9px; max-width:760px}
-  .areas .towns span{
-    border:1px solid var(--line); color:#d3d8df; border-radius:3px;
-    padding:8px 15px; font-size:15px; font-weight:600;
+  .about p { font-size: 17px; margin-bottom: 16px; color: #333; max-width: 780px; }
+  .about .quote {
+    border-left: 5px solid var(--banana);
+    background: #fff;
+    padding: 18px 22px;
+    font-size: 18px;
+    font-style: italic;
+    margin: 24px 0;
+    color: var(--charcoal);
   }
-  .areas .towns span.home{background:var(--hi); border-color:var(--hi); color:#14161a; font-weight:800}
-
-  /* ---- contact ---- */
-  .contact{background:var(--paper-2); border-top:1px solid #e4e0da}
-  .bignum{
-    display:inline-block; font-size:clamp(33px,6.4vw,55px); font-weight:800;
-    letter-spacing:-.035em; color:var(--ink); text-decoration:none; line-height:1.05;
-    border-bottom:5px solid var(--hi); padding-bottom:5px;
+  .about .quote .attr {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    color: #66707c;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
-  .cols{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:30px; margin-top:38px}
-  .cols h4{font-size:12px; font-weight:800; letter-spacing:.14em; text-transform:uppercase;
-           color:var(--steel); margin-bottom:9px}
-  .cols p, .cols a{font-size:16.5px; color:var(--ink); text-decoration:none; line-height:1.5}
-  .cols a{border-bottom:1px solid #c9c3ba}
-  .cols a:hover{border-bottom-color:var(--hi)}
 
-  footer{background:var(--ink); color:#7c8593; padding:30px 0; font-size:14px}
-  footer .wrap{display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between}
+  /* Services */
+  .services { background: var(--charcoal); color: #fff; }
+  .services .h2sub { color: var(--banana); }
+  .services h2 { color: #fff; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+  }
+  .card {
+    background: var(--steel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px;
+  }
+  .card h3 {
+    font-size: 19px;
+    color: var(--banana);
+    margin-bottom: 8px;
+  }
+  .card p { font-size: 15px; color: #d5dae0; }
 
-  @media (max-width:640px){
-    body{padding-top:52px}
-    .callbar{height:52px; padding:0 12px}
-    .callbar .mark{font-size:14px}
-    .callbar a{padding:9px 13px; font-size:14px}
-    .hero{padding:46px 0 42px}
-    section{padding:46px 0}
-    .wrap{padding:0 17px}
-    .trust li{flex:1 1 100%; border-right:0; border-bottom:1px solid var(--line); padding:18px}
-    .trust li:last-child{border-bottom:0}
+  /* Areas */
+  .areas { text-align: center; }
+  .areas .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .areas .list span {
+    background: #fff;
+    border: 1px solid #d8d4cc;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  /* Photos */
+  .photos { background: #e9e6df; }
+  .photogrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+  }
+  .photogrid img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+
+  /* Contact */
+  .contact {
+    background: var(--charcoal);
+    color: #fff;
+    text-align: center;
+  }
+  .contact h2 { color: #fff; }
+  .contact .phone {
+    display: inline-block;
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--banana);
+    text-decoration: none;
+    margin: 12px 0 20px;
+  }
+  .contact .info {
+    font-size: 17px;
+    color: #d5dae0;
+    margin-bottom: 6px;
+  }
+  .contact .info a { color: var(--banana); text-decoration: none; }
+  .contact .row { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+  footer {
+    background: #101215;
+    color: #8a929c;
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 14px;
+  }
+  footer .yr { color: #cdd2d8; font-weight: 600; }
+
+  @media (max-width: 600px) {
+    .hero { padding: 54px 16px 60px; }
+    .hero h1 { font-size: 29px; }
+    .hero p.sub { font-size: 17px; }
+    .callbar .brand { font-size: 13px; }
+    .callbar a.call { padding: 8px 11px; font-size: 14px; }
+    h2 { font-size: 24px; }
+    .trust .item { flex: 1 1 50%; border-right: 1px solid var(--line); }
+    .contact .phone { font-size: 27px; }
   }
 </style>
 </head>
 <body>
 
 <div class="callbar">
-  <div class="mark">PRIME APE <span>JUNK REMOVAL</span></div>
-  <a href="tel:4015428581">Call or Text</a>
+  <div class="brand">Prime <span>Ape</span> Junk Removal</div>
+  <a class="call" href="tel:14015428581">Call or Text (401) 542-8581</a>
 </div>
 
 <header class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Warwick, Rhode Island</div>
-    <h1>You point. We load. <em>It's gone.</em></h1>
-    <p class="lede">Same-day junk removal across Rhode Island and nearby Massachusetts — from a
-       single bulky item to a full property cleanout, hauled away in one visit.</p>
-    <a class="cta" href="tel:4015428581"><small>Free estimate — call or text</small>(401) 542-8581</a>
-  </div>
+  <div class="eyebrow">Warwick, Rhode Island</div>
+  <h1>Same-Day Junk Removal. You Point, We Load, We Haul It Away.</h1>
+  <p class="sub">Locally owned and insured. From a single-room declutter to a full property cleanout — one call is all it takes to get a crew on the way.</p>
+  <a class="btn" href="tel:14015428581">Call or Text for a Free Estimate</a>
+  <div class="texthint">Text us a photo of your junk and get a free quote in minutes.</div>
 </header>
 
 <div class="trust">
-  <div class="wrap">
-    <ul>
-      <li><b><span class="star">&#9733;</span> 5.0</b><span>24 Google reviews</span></li>
-      <li><b>Insured</b><span>Family owned</span></li>
-      <li><b>Same day</b><span>Service available</span></li>
-      <li><b>One visit</b><span>Any size job</span></li>
-    </ul>
+  <div class="item">
+    <span class="big">5.0<span class="stars"> ★</span></span>
+    <div class="lbl">Rated across 24 reviews</div>
+  </div>
+  <div class="item">
+    <span class="big">Same Day</span>
+    <div class="lbl">Service available</div>
+  </div>
+  <div class="item">
+    <span class="big">Insured</span>
+    <div class="lbl">Locally &amp; family owned</div>
   </div>
 </div>
 
-<section class="quote">
+<section class="pad about">
   <div class="wrap">
-    <p>&ldquo;You point, we load, and we haul everything away.&rdquo;</p>
-    <cite>In their own words</cite>
+    <div class="h2sub">About Us</div>
+    <h2>Fast, affordable junk removal across Rhode Island</h2>
+    <p>Prime Ape Junk Removal is a trusted, locally owned junk removal company providing same-day junk removal services across Rhode Island and nearby Massachusetts. We specialize in fast, affordable junk removal, handling everything from small pickups to full property cleanouts.</p>
+    <p>Whether you need furniture removal, appliance disposal, construction debris cleanup, basement or attic cleanouts, eviction cleanouts, or demolition services, our team is ready to get the job done quickly, safely, and professionally.</p>
+    <div class="quote">
+      "At Prime Ape Junk Removal, we make the process simple — you point, we load, and we haul everything away."
+      <span class="attr">Prime Ape Junk Removal, in their own words</span>
+    </div>
+    <p>Our cleanouts are thorough and efficient, covering everything from single-room declutters to full estate and property cleanouts. No job is too big or too small — with same-day availability, you never have to wait days or weeks to reclaim your space.</p>
+    <a class="btn small" href="tel:14015428581">Call or Text (401) 542-8581</a>
   </div>
 </section>
 
-<section>
+<section class="pad services">
   <div class="wrap">
-    <h2>What they do</h2>
+    <div class="h2sub">What we're best at</div>
+    <h2>Our Services</h2>
     <div class="grid">
-      <article>
+      <div class="card">
         <h3>Junk Removal</h3>
-        <p>Reclaim your space without the heavy lifting. They handle the loading and the
-           disposal, from small pickups to full property cleanouts.</p>
-      </article>
-      <article>
-        <h3>Furniture Removal</h3>
-        <p>Bulky pieces and mattresses removed and disposed of &mdash; the awkward items most
-           people have no way to move themselves.</p>
-      </article>
-      <article>
-        <h3>Heavy Lifting</h3>
-        <p>Help with large, heavy items when the problem isn't the hauling, it's getting the
-           thing out of the house in the first place.</p>
-      </article>
-      <article>
+        <p>We help homeowners reclaim their space by efficiently removing unwanted items — we handle the heavy lifting and disposal, making decluttering stress-free and convenient.</p>
+      </div>
+      <div class="card">
         <h3>Demolition</h3>
-        <p>Light interior demolition through to hauling away construction and renovation
-           debris &mdash; one team for every stage of the cleanup.</p>
-      </article>
-      <article>
+        <p>A hassle-free solution to safely and efficiently remove unwanted structures from your property, providing a seamless transition for new construction or renovation projects.</p>
+      </div>
+      <div class="card">
         <h3>Basement Water Removal</h3>
-        <p>Water pulled out of basements after flooding or a leak, alongside the cleanout of
-           whatever the water ruined.</p>
-      </article>
-      <article>
+        <p>Efficient basement water removal services for homeowners dealing with unwanted water accumulation caused by flooding or leaks in their home.</p>
+      </div>
+      <div class="card">
+        <h3>Furniture Removal</h3>
+        <p>We efficiently remove and dispose of unwanted furniture and mattresses, freeing up space in your home. Trust our team to safely handle bulky items with ease.</p>
+      </div>
+      <div class="card">
+        <h3>Heavy Lifting</h3>
+        <p>Assistance with removing large and bulky items from your home, making the process of decluttering and junk removal easier for you. Contact us for help.</p>
+      </div>
+      <div class="card">
         <h3>Oil Tank Removal</h3>
-        <p>Old, unused oil tanks removed safely &mdash; a job with rules attached, done by
-           people who do it regularly.</p>
-      </article>
-      <article>
-        <h3>Roofing &amp; Siding</h3>
-        <p>Roofing and siding work, with the tear-off debris hauled off by the same crew
-           rather than left in the driveway.</p>
-      </article>
-      <article>
-        <h3>Cleanouts</h3>
-        <p>Basements, attics, estates and evictions. Single-room declutters up to whole
-           properties, cleared in one visit.</p>
-      </article>
+        <p>We safely and efficiently remove old, unused oil tanks — a crucial component of our junk removal services.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="areas">
+<section class="pad areas">
   <div class="wrap">
-    <h2>Where they work</h2>
-    <div class="towns">
-      <span class="home">Warwick, RI</span>
+    <div class="h2sub">Service Areas</div>
+    <h2>Serving Warwick and beyond</h2>
+    <div class="list">
+      <span>Warwick, RI</span>
       <span>Providence, RI</span>
       <span>Cranston, RI</span>
       <span>Pawtucket, RI</span>
@@ -232,36 +371,36 @@
   </div>
 </section>
 
-<section class="contact">
+<section class="pad photos">
   <div class="wrap">
-    <h2>Get a free estimate</h2>
-    <a class="bignum" href="tel:4015428581">(401) 542-8581</a>
-    <div class="cols">
-      <div>
-        <h4>Call or text</h4>
-        <p><a href="tel:4015428581">(401) 542-8581</a></p>
-      </div>
-      <div>
-        <h4>Email</h4>
-        <p><a href="mailto:goldkeyps@gmail.com">goldkeyps@gmail.com</a></p>
-      </div>
-      <div>
-        <h4>Address</h4>
-        <p>839 Warwick Ave<br>Warwick, RI 02888</p>
-      </div>
-      <div>
-        <h4>Website</h4>
-        <p><a href="https://primeapejunk.com/">primeapejunk.com</a></p>
-      </div>
+    <div class="h2sub">Galleries</div>
+    <h2>Our Past Work</h2>
+    <div class="photogrid">
+      <img src="photo2.jpg" alt="Prime Ape Junk Removal work">
+      <img src="photo4.jpg" alt="Prime Ape Junk Removal job in progress">
+      <img src="photo3.jpg" alt="Prime Ape Junk Removal">
+      <img src="photo1.jpg" alt="Prime Ape Junk Removal">
     </div>
   </div>
 </section>
 
-<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Got a pile of old appliances that&#x27;s calling out for some serious recycling? Our team handles those tough jobs with ease. #WarwickJunkRemoval #PrimeApeExerts</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Need to clear your space before the heatwave hits Warwick, but don&#x27;t know where to start? Let Prime Ape Junk Removal help! #SummerMaintenanceWarwick #PrimeApeExpertise</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Reel idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Turns out old appliances are better off recycled. Prime Ape Junk Removal knows just how to tackle that tricky pile. Watch for local tips &amp; tricks next week! #WarwickJunkRemoval #SummerCleanupTips</p></div></div></article></div></section><footer>
+<section class="pad contact" id="contact">
   <div class="wrap">
-    <div>&copy; Prime Ape Junk Removal</div>
-    <div>Site by Atlas Inc</div>
+    <div class="h2sub" style="color:var(--banana)">Get In Touch</div>
+    <h2>Call or text for a free estimate today</h2>
+    <a class="phone" href="tel:14015428581">(401) 542-8581</a>
+    <div class="info">Email: <a href="mailto:goldkeyps@gmail.com">goldkeyps@gmail.com</a></div>
+    <div class="info">839 Warwick Ave, Warwick, RI 02888</div>
+    <div class="row">
+      <a class="btn small" href="tel:14015428581">Call Now</a>
+      <a class="btn small" href="https://primeapejunk.com/" style="background:#2b3038;color:#fff;box-shadow:0 4px 0 #101215;">Visit Our Website</a>
+    </div>
   </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--charcoal,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Got a pile of old appliances that&#x27;s calling out for some serious recycling? Our team handles those tough jobs with ease. #WarwickJunkRemoval #PrimeApeExerts</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Need to clear your space before the heatwave hits Warwick, but don&#x27;t know where to start? Let Prime Ape Junk Removal help! #SummerMaintenanceWarwick #PrimeApeExpertise</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Reel idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Turns out old appliances are better off recycled. Prime Ape Junk Removal knows just how to tackle that tricky pile. Watch for local tips &amp; tricks next week! #WarwickJunkRemoval #SummerCleanupTips</p></div></div></article></div></section><footer>
+  <div>&copy; Prime Ape Junk Removal &nbsp;·&nbsp; Warwick, RI</div>
+  <div style="margin-top:6px;">Site by Atlas Inc</div>
 </footer>
 
 </body>
