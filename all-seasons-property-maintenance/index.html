@@ -1,252 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All Seasons Property Maintenance — Landscaping &amp; Property Care in West Warwick, RI</title>
-<meta name="description" content="Licensed and fully insured landscaping and property maintenance in West Warwick, Rhode Island. Lawn care, landscape construction, masonry, water features and snow removal. Free estimates — (401) 821-3700.">
+<meta name="description" content="All Seasons Property Maintenance in West Warwick, RI: lawn maintenance, landscape construction, masonry, water features, snow removal and more. Licensed, fully insured, free estimates.">
 <meta name="robots" content="noindex,nofollow,noarchive">
 <style>
   :root{
-    --moss:#1d3a2b; --moss-d:#132518; --moss-l:#2f5a41;
-    --cream:#f4f1e8; --card:#fffdf8; --edge:#e0dac9;
-    --brass:#c19434; --brass-l:#e0b657;
-    --text:#25302a; --muted:#63706a;
+    --green:#1f4d2b;
+    --green-deep:#143620;
+    --moss:#5a7d3c;
+    --gold:#c9a227;
+    --stone:#f2efe6;
+    --ink:#22261f;
+    --line:#d8d2c1;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{-webkit-text-size-adjust:100%}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
   body{
-    background:var(--cream); color:var(--text);
-    font:400 17px/1.68 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    padding-top:58px;
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--stone);
+    line-height:1.55;
+    padding-bottom:64px;
   }
-  .wrap{width:100%;max-width:1020px;margin:0 auto;padding:0 24px}
-  .serif{font-family:Georgia,"Iowan Old Style","Times New Roman",Times,serif}
+  a{color:inherit;}
 
+  /* Call bar */
   .callbar{
-    position:fixed;top:0;left:0;right:0;z-index:50;height:58px;
-    background:var(--moss-d);color:var(--cream);
-    display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 20px;
-    border-bottom:1px solid var(--moss-l);
+    position:sticky;top:0;z-index:50;
+    background:var(--green-deep);
+    color:#fff;
+    display:flex;justify-content:space-between;align-items:center;
+    gap:12px;
+    padding:10px 16px;
+    border-bottom:3px solid var(--gold);
   }
-  .callbar .mark{font-size:15.5px;font-weight:700;letter-spacing:.01em;line-height:1.15}
-  .callbar .mark em{font-style:normal;color:var(--brass-l)}
-  .callbar a{
-    background:var(--brass);color:#1a1508;text-decoration:none;font-weight:800;font-size:15px;
-    padding:10px 17px;border-radius:2px;white-space:nowrap;
+  .callbar .biz{font-weight:700;font-size:.95rem;letter-spacing:.3px;}
+  .callbar a.call{
+    background:var(--gold);
+    color:#1a1a1a;
+    text-decoration:none;
+    font-weight:700;
+    padding:8px 14px;
+    border-radius:6px;
+    white-space:nowrap;
+    font-size:.9rem;
   }
 
-  .hero{background:var(--moss);color:#eef3ec;padding:74px 0 62px}
-  .eyebrow{font-size:12.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
-           color:var(--brass-l);margin-bottom:22px}
-  h1{font-size:clamp(37px,6.6vw,62px);line-height:1.04;letter-spacing:-.02em;
-     font-weight:400;margin-bottom:22px;max-width:16ch}
-  h1 em{font-style:italic;color:var(--brass-l)}
-  .lede{font-size:clamp(17px,2.2vw,20px);color:#bfd0c3;max-width:54ch;margin-bottom:34px}
-  .cta{display:inline-block;background:var(--brass);color:#1a1508;text-decoration:none;
-       font-weight:800;font-size:19px;padding:16px 28px;border-radius:2px;letter-spacing:-.01em}
-  .cta small{display:block;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
-             font-weight:700;opacity:.68;margin-bottom:3px}
+  /* Hero */
+  .hero{
+    position:relative;
+    color:#fff;
+    padding:72px 20px 80px;
+    text-align:center;
+    background:
+      linear-gradient(rgba(15,40,22,.78),rgba(15,40,22,.86)),
+      url('photo1.jpg') center/cover no-repeat;
+  }
+  .hero .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:.78rem;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:2.3rem;
+    line-height:1.15;
+    max-width:15ch;
+    margin:0 auto 18px;
+    font-weight:800;
+  }
+  .hero p.lead{
+    max-width:44ch;
+    margin:0 auto 30px;
+    font-size:1.08rem;
+    color:#eef1e8;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--gold);
+    color:#1a1a1a;
+    text-decoration:none;
+    font-weight:700;
+    padding:15px 30px;
+    border-radius:8px;
+    font-size:1.1rem;
+  }
 
-  .trust{background:var(--moss-d);color:#eef3ec}
-  .trust ul{list-style:none;display:flex;flex-wrap:wrap}
-  .trust li{flex:1 1 190px;padding:22px 24px;border-right:1px solid var(--moss-l)}
-  .trust li:last-child{border-right:0}
-  .trust b{display:block;font-size:22px;font-weight:700;letter-spacing:-.01em}
-  .trust b .star{color:var(--brass-l)}
-  .trust span{font-size:12.5px;color:#93a998;text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+  /* Trust strip */
+  .trust{
+    background:var(--green);
+    color:#fff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px 0;
+    text-align:center;
+  }
+  .trust div{
+    flex:1 1 160px;
+    padding:18px 14px;
+    border-right:1px solid rgba(255,255,255,.15);
+  }
+  .trust div:last-child{border-right:none;}
+  .trust .big{display:block;font-size:1.4rem;font-weight:800;color:var(--gold);}
+  .trust .sub{font-size:.85rem;color:#e6ecdf;}
 
-  section{padding:66px 0}
-  .label{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
-         color:var(--brass);margin-bottom:24px}
+  section{padding:56px 20px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  h2{
+    font-size:1.7rem;
+    color:var(--green-deep);
+    margin-bottom:8px;
+  }
+  .rule{
+    width:60px;height:4px;background:var(--gold);border-radius:2px;margin-bottom:26px;
+  }
 
-  .words{background:var(--card);border-top:1px solid var(--edge);border-bottom:1px solid var(--edge)}
-  .words blockquote{font-size:clamp(22px,3.5vw,32px);line-height:1.32;letter-spacing:-.015em;
-                    max-width:26ch;margin-bottom:18px}
-  .words cite{display:block;font-style:normal;font-size:13px;font-weight:800;
-              letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-  .story{margin-top:42px;max-width:62ch;font-size:17px;color:#3d4a43}
-  .story strong{color:var(--moss);font-weight:700}
+  /* Services */
+  .services .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:14px;
+    margin-top:8px;
+  }
+  .services .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-left:5px solid var(--moss);
+    border-radius:6px;
+    padding:16px 18px;
+    font-weight:600;
+    color:var(--ink);
+  }
+  .badge-row{
+    display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;
+  }
+  .badge{
+    background:var(--green-deep);
+    color:#fff;
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.5px;
+    text-transform:uppercase;
+    padding:7px 14px;
+    border-radius:20px;
+  }
 
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:1px;
-        background:var(--edge);border:1px solid var(--edge)}
-  .grid article{background:var(--card);padding:24px 22px}
-  .grid h3{font-size:18px;font-weight:700;letter-spacing:-.01em;margin-bottom:7px;color:var(--moss)}
-  .grid p{font-size:15px;color:#5c6963;line-height:1.55}
+  /* About */
+  .about{background:#fff;}
+  .about p{max-width:62ch;margin-bottom:16px;font-size:1.05rem;}
+  .quote{
+    border-left:5px solid var(--gold);
+    background:var(--stone);
+    padding:20px 24px;
+    border-radius:0 8px 8px 0;
+    font-style:italic;
+    max-width:62ch;
+    margin-top:10px;
+  }
+  .quote .who{display:block;font-style:normal;font-weight:700;margin-top:10px;color:var(--green-deep);}
 
-  .season{background:var(--moss);color:#eef3ec}
-  .season .label{color:var(--brass-l)}
-  .season .pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:34px}
-  .season h3{font-size:26px;font-weight:400;margin-bottom:10px;color:var(--brass-l)}
-  .season p{color:#bfd0c3;font-size:16.5px}
+  /* Gallery */
+  .gallery .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:12px;
+    margin-top:8px;
+  }
+  .gallery img{
+    width:100%;height:240px;object-fit:cover;
+    border-radius:8px;border:1px solid var(--line);
+  }
 
-  .contact{background:var(--card);border-top:1px solid var(--edge)}
-  .bignum{display:inline-block;font-size:clamp(32px,6vw,52px);font-weight:700;letter-spacing:-.03em;
-          color:var(--moss);text-decoration:none;border-bottom:4px solid var(--brass);padding-bottom:5px}
-  .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin-top:36px}
-  .cols h4{font-size:11.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
-           color:var(--muted);margin-bottom:8px}
-  .cols p,.cols a{font-size:16.5px;color:var(--text);text-decoration:none}
-  .cols a{border-bottom:1px solid #cfc7b3}
-  .cols a:hover{border-bottom-color:var(--brass)}
+  /* Contact */
+  .contact{background:var(--green-deep);color:#fff;}
+  .contact h2{color:#fff;}
+  .contact .rule{background:var(--gold);}
+  .contact .cols{
+    display:flex;flex-wrap:wrap;gap:30px;
+  }
+  .contact .col{flex:1 1 260px;}
+  .contact a.phone{
+    display:inline-block;
+    font-size:2rem;
+    font-weight:800;
+    color:var(--gold);
+    text-decoration:none;
+    margin:6px 0 14px;
+  }
+  .contact a{color:#eaf0e2;}
+  .contact .col p{margin-bottom:6px;}
+  .contact .label{
+    text-transform:uppercase;letter-spacing:2px;font-size:.75rem;
+    color:var(--gold);font-weight:700;margin-bottom:8px;
+  }
 
-  footer{background:var(--moss-d);color:#8ea394;padding:28px 0;font-size:14px}
-  footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+  footer{
+    background:#0e2416;color:#b9c7ad;text-align:center;
+    padding:24px 20px;font-size:.85rem;
+  }
+  footer .sep{margin:0 8px;opacity:.5;}
+
+  /* Sticky mobile call */
+  .sticky-call{
+    position:fixed;bottom:0;left:0;right:0;z-index:60;
+    display:none;
+    background:var(--gold);
+    text-align:center;
+  }
+  .sticky-call a{
+    display:block;
+    padding:16px;
+    color:#1a1a1a;
+    text-decoration:none;
+    font-weight:800;
+    font-size:1.1rem;
+  }
 
   @media (max-width:640px){
-    body{padding-top:54px}
-    .callbar{height:54px;padding:0 13px}
-    .callbar .mark{font-size:13.5px}
-    .callbar a{padding:9px 13px;font-size:14px}
-    .hero{padding:50px 0 44px}
-    section{padding:48px 0}
-    .wrap{padding:0 18px}
-    .trust li{flex:1 1 100%;border-right:0;border-bottom:1px solid var(--moss-l);padding:17px 18px}
-    .trust li:last-child{border-bottom:0}
+    .hero{padding:56px 18px 60px;}
+    .hero h1{font-size:1.85rem;}
+    .callbar .biz{font-size:.82rem;}
+    .trust div{flex:1 1 45%;border-right:none;}
+    .sticky-call{display:block;}
+    body{padding-bottom:0;}
   }
 </style>
 </head>
 <body>
 
-<div class="callbar">
-  <div class="mark">ALL SEASONS <em>PROPERTY MAINTENANCE</em></div>
-  <a href="tel:4018213700">Call Now</a>
-</div>
+  <div class="callbar">
+    <span class="biz">All Seasons Property Maintenance</span>
+    <a class="call" href="tel:+14018213700">Call (401) 821-3700</a>
+  </div>
 
-<header class="hero">
-  <div class="wrap">
+  <header class="hero">
     <div class="eyebrow">West Warwick, Rhode Island</div>
-    <h1 class="serif">Lawns in July.<br><em>Plows in January.</em></h1>
-    <p class="lede">Property care that doesn't stop when the weather turns &mdash; lawn
-       maintenance, landscape construction, masonry and snow removal, from one crew you
-       already know.</p>
-    <a class="cta" href="tel:4018213700"><small>Free estimates</small>(401) 821-3700</a>
-  </div>
-</header>
+    <h1>Year-round property care, done by a local crew</h1>
+    <p class="lead">Landscaping, masonry and maintenance across the seasons — from lawn work and water features to snow removal when winter hits.</p>
+    <a class="btn" href="tel:+14018213700">Call for a Free Estimate</a>
+  </header>
 
-<div class="trust">
-  <div class="wrap">
-    <ul>
-      <li><b><span class="star">&#9733;</span> 5.0</b><span>6 Google reviews</span></li>
-      <li><b>Since 2012</b><span>West Warwick</span></li>
-      <li><b>Licensed</b><span>Fully insured</span></li>
-      <li><b>Free</b><span>Estimates</span></li>
-    </ul>
-  </div>
-</div>
-
-<section class="words">
-  <div class="wrap">
-    <div class="label">In their own words</div>
-    <blockquote class="serif">&ldquo;Once again, thank you! Please reiterate to your crew how
-      much we love it, it's beautiful and we appreciate the hard work all of you put in.&rdquo;</blockquote>
-    <cite>&mdash; Julie, customer testimonial</cite>
-    <p class="story">Founded in <strong>2012</strong>, All Seasons Property Maintenance describes
-      itself as a trusted leader in the property care and landscaping industry, built on
-      <strong>over 20 years of combined experience</strong> and a foundation in business
-      management &mdash; a bachelor's degree from URI &mdash; with the aim of redefining what
-      property maintenance service looks like.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="label">Services</div>
-    <div class="grid">
-      <article>
-        <h3>Lawn Maintenance</h3>
-        <p>Regular upkeep that keeps a property looking cared for through the whole growing
-           season.</p>
-      </article>
-      <article>
-        <h3>Lawn Installation</h3>
-        <p>New lawns put in properly, from grading and prep through to establishment.</p>
-      </article>
-      <article>
-        <h3>Landscape Construction</h3>
-        <p>The built side of a yard &mdash; the structural work a planting plan sits on.</p>
-      </article>
-      <article>
-        <h3>Masonry</h3>
-        <p>Stone and hardscape work, done by the same company that maintains the grounds
-           around it.</p>
-      </article>
-      <article>
-        <h3>Custom Water Features</h3>
-        <p>Water built into the landscape as a designed element rather than an add-on.</p>
-      </article>
-      <article>
-        <h3>Plant Installations</h3>
-        <p>Planting chosen and placed for the site, then looked after by the crew that put it
-           in.</p>
-      </article>
-      <article>
-        <h3>Pool Installation</h3>
-        <p>Pools installed as part of the wider property, not dropped into a yard and left.</p>
-      </article>
-      <article>
-        <h3>Snow Removal</h3>
-        <p>Winter clearing &mdash; the other half of "all seasons," and the reason the same
-           number works in January.</p>
-      </article>
-      <article>
-        <h3>Materials &amp; Firewood</h3>
-        <p>Landscape materials and firewood supplied directly, without a second vendor in the
-           middle.</p>
-      </article>
+  <div class="trust">
+    <div>
+      <span class="big">5.0 ★</span>
+      <span class="sub">Rated across 6 Google reviews</span>
+    </div>
+    <div>
+      <span class="big">Since 2012</span>
+      <span class="sub">Founded &amp; based in West Warwick</span>
+    </div>
+    <div>
+      <span class="big">Free</span>
+      <span class="sub">Estimates on every job</span>
     </div>
   </div>
-</section>
 
-<section class="season">
-  <div class="wrap">
-    <div class="label">One crew, year round</div>
-    <div class="pair">
-      <div>
-        <h3 class="serif">Green season</h3>
-        <p>Lawn maintenance and installation, plantings, landscape construction, masonry, water
-           features and pools &mdash; the work that makes a property worth looking at.</p>
+  <section class="services">
+    <div class="wrap">
+      <h2>What We Do</h2>
+      <div class="rule"></div>
+      <div class="badge-row">
+        <span class="badge">Licensed</span>
+        <span class="badge">Fully Insured</span>
+        <span class="badge">Free Estimates</span>
       </div>
-      <div>
-        <h3 class="serif">White season</h3>
-        <p>Snow removal, plus landscape materials and firewood. The same crew, the same number,
-           and no scramble to find someone new when the first storm lands.</p>
+      <div class="grid">
+        <div class="card">Lawn Maintenance</div>
+        <div class="card">Lawn Installation</div>
+        <div class="card">Landscape Construction</div>
+        <div class="card">Custom Water Features</div>
+        <div class="card">Masonry</div>
+        <div class="card">Snow Removal</div>
+        <div class="card">Landscape Materials &amp; Firewood</div>
+        <div class="card">Plant Installations</div>
+        <div class="card">Pool Installation</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="contact">
-  <div class="wrap">
-    <div class="label">Free estimate</div>
-    <a class="bignum" href="tel:4018213700">(401) 821-3700</a>
-    <div class="cols">
-      <div>
-        <h4>Call</h4>
-        <p><a href="tel:4018213700">(401) 821-3700</a></p>
-      </div>
-      <div>
-        <h4>Email</h4>
-        <p><a href="mailto:allseasonspm@yahoo.com">allseasonspm@yahoo.com</a></p>
-      </div>
-      <div>
-        <h4>Address</h4>
-        <p>334 Providence St<br>West Warwick, RI 02893</p>
-      </div>
-      <div>
-        <h4>Website</h4>
-        <p><a href="http://wedoitallseasons.com/">wedoitallseasons.com</a></p>
+  <section class="about">
+    <div class="wrap">
+      <h2>About the Company</h2>
+      <div class="rule"></div>
+      <p>In their own words: “Founded in 2012, All Seasons Property Maintenance has been a trusted leader in the property care and landscaping industry for nearly a decade. With over 20 years of combined experience and a strong foundation in business management through a bachelor's degree from URI, our founder set out to create a company that would redefine property maintenance services.”</p>
+      <div class="quote">
+        “Once again, thank you! Please reiterate to your crew how much we love it, it's beautiful and we appreciate the hard work all of you put in.”
+        <span class="who">— Julie</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--text,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--card,#ffffff);border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:rgba(0,0,0,.10)"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Gotta love the warm weather! Summer means barbecues and fun in Warwick. If you&#x27;re not sure about property maintenance, just reach out. We can help with seasonal tasks like air conditioning checks.</p></div></div></article><article class="post"><div style="background:var(--card,#ffffff);border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:rgba(0,0,0,.10)"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Spring is the season for fresh starts! Get your house in tip-top shape before the hot days come. We&#x27;ve got you covered with our annual spring cleaning services. #HomeRenewal #SpringCleaning</p></div></div></article><article class="post"><div style="background:var(--card,#ffffff);border:1px solid rgba(0,0,0,.10);border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.png" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:rgba(0,0,0,.10)"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call All Seasons Property Maintenance and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
-  <div class="wrap">
-    <div>&copy; All Seasons Property Maintenance</div>
-    <div>Site by Atlas Inc</div>
+  <section class="gallery">
+    <div class="wrap">
+      <h2>Recent Work</h2>
+      <div class="rule"></div>
+      <div class="grid">
+        <img src="photo2.jpg" alt="All Seasons Property Maintenance premises">
+        <img src="photo3.jpg" alt="Landscaping and property work by All Seasons">
+        <img src="photo4.jpg" alt="Landscaping and property work by All Seasons">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Get in Touch</h2>
+      <div class="rule"></div>
+      <div class="cols">
+        <div class="col">
+          <div class="label">Call Us</div>
+          <a class="phone" href="tel:+14018213700">(401) 821-3700</a>
+          <p><a href="mailto:allseasonspm@yahoo.com">allseasonspm@yahoo.com</a></p>
+          <p><a href="http://wedoitallseasons.com/" target="_blank" rel="noopener">wedoitallseasons.com</a></p>
+        </div>
+        <div class="col">
+          <div class="label">Find Us</div>
+          <p>334 Providence St</p>
+          <p>West Warwick, RI 02893</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Gotta love the warm weather! Summer means barbecues and fun in Warwick. If you&#x27;re not sure about property maintenance, just reach out. We can help with seasonal tasks like air conditioning checks.</p></div></div></article><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Spring is the season for fresh starts! Get your house in tip-top shape before the hot days come. We&#x27;ve got you covered with our annual spring cleaning services. #HomeRenewal #SpringCleaning</p></div></div></article><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call All Seasons Property Maintenance and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+    <span>© All Seasons Property Maintenance</span>
+    <span class="sep">|</span>
+    <span>Site by Atlas Inc</span>
+  </footer>
+
+  <div class="sticky-call">
+    <a href="tel:+14018213700">Call (401) 821-3700</a>
   </div>
-</footer>
 
 </body>
 </html>
