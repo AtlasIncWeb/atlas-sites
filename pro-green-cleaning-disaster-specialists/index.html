@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro-Green Cleaning &amp; Disaster Specialists — Water, Fire &amp; Mold Restoration in Warwick, RI</title>
+<meta name="description" content="Pro-Green Cleaning &amp; Disaster Specialists in Warwick, RI. Water damage, fire &amp; soot, mold remediation, biohazard cleanup and general contracting. Available 24/7 for emergencies. Call (401) 588-1155.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  :root{
+    --navy:#0d2436;
+    --steel:#163a52;
+    --green:#3a8f4a;
+    --green-bright:#57bf6a;
+    --alarm:#e2492b;
+    --sand:#f3f1ea;
+    --ink:#12212b;
+    --line:rgba(255,255,255,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--sand);
+    line-height:1.55;
+  }
+  a{color:inherit;}
+
+  /* Call bar */
+  .callbar{
+    position:sticky;top:0;z-index:50;
+    background:var(--navy);
+    color:#fff;
+    display:flex;justify-content:space-between;align-items:center;
+    gap:12px;
+    padding:10px 16px;
+    border-bottom:2px solid var(--green);
+  }
+  .callbar .name{
+    font-weight:700;font-size:.92rem;letter-spacing:.2px;line-height:1.2;
+  }
+  .callbar .name span{display:block;font-weight:400;font-size:.72rem;color:#9fb6c4;text-transform:uppercase;letter-spacing:1.5px;}
+  .callbar a.call{
+    background:var(--alarm);color:#fff;text-decoration:none;
+    padding:10px 16px;border-radius:6px;font-weight:700;
+    white-space:nowrap;font-size:.95rem;
+  }
+
+  /* Hero */
+  .hero{
+    position:relative;
+    color:#fff;
+    padding:70px 20px 60px;
+    background:
+      linear-gradient(180deg, rgba(10,26,38,.82), rgba(10,26,38,.9)),
+      url('photo1.jpg');
+    background-size:cover;
+    background-position:center;
+  }
+  .hero .wrap{max-width:820px;margin:0 auto;}
+  .eyebrow{
+    text-transform:uppercase;letter-spacing:3px;font-size:.78rem;
+    color:var(--green-bright);font-weight:700;margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:2.3rem;line-height:1.12;font-weight:800;margin-bottom:18px;
+  }
+  .hero p.lead{font-size:1.12rem;color:#dce7ee;max-width:600px;margin-bottom:14px;}
+  .hero .emerg{
+    display:inline-block;background:rgba(226,73,43,.18);
+    border:1px solid var(--alarm);color:#ffd7cd;
+    padding:6px 14px;border-radius:20px;font-weight:600;font-size:.9rem;
+    margin-bottom:26px;
+  }
+  .btnrow{display:flex;flex-wrap:wrap;gap:12px;}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;
+    padding:15px 26px;border-radius:8px;font-size:1.05rem;
+  }
+  .btn.primary{background:var(--alarm);color:#fff;}
+  .btn.ghost{background:rgba(255,255,255,.08);color:#fff;border:1px solid var(--line);}
+
+  /* Trust strip */
+  .trust{
+    background:var(--green);
+    color:#fff;
+    display:flex;flex-wrap:wrap;justify-content:center;
+    gap:8px 42px;
+    padding:20px 18px;
+    text-align:center;
+  }
+  .trust div{font-size:.98rem;font-weight:600;}
+  .trust .big{font-size:1.35rem;font-weight:800;display:block;}
+  .trust small{font-weight:400;opacity:.9;}
+  .stars{letter-spacing:2px;}
+
+  /* Sections */
+  section.pad{padding:56px 20px;}
+  .inner{max-width:960px;margin:0 auto;}
+  h2{font-size:1.7rem;color:var(--navy);margin-bottom:8px;font-weight:800;}
+  .sub{color:#4a5a64;margin-bottom:28px;max-width:640px;}
+
+  /* Services grid */
+  .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+  .svc{
+    background:#fff;border-radius:10px;padding:22px 20px;
+    border-left:4px solid var(--green);
+    box-shadow:0 2px 10px rgba(13,36,54,.06);
+  }
+  .svc h3{font-size:1.05rem;color:var(--navy);margin-bottom:6px;text-transform:capitalize;}
+  .svc p{font-size:.9rem;color:#556570;}
+
+  /* Insurance block */
+  .insurance{
+    background:var(--steel);color:#eaf1f5;border-radius:12px;
+    padding:36px 30px;
+  }
+  .insurance h2{color:#fff;}
+  .insurance p{color:#cfdde6;margin-bottom:14px;}
+  .insurance .need{
+    background:rgba(255,255,255,.07);border:1px solid var(--line);
+    border-radius:8px;padding:16px 18px;font-weight:600;color:#fff;
+  }
+
+  /* Photos */
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;}
+  .gallery img{width:100%;height:210px;object-fit:cover;border-radius:8px;display:block;}
+
+  /* Contact */
+  .contact{background:var(--navy);color:#fff;}
+  .contact .inner{display:grid;grid-template-columns:1fr 1fr;gap:36px;}
+  .contact h2{color:#fff;}
+  .telbig{
+    display:inline-block;font-size:2rem;font-weight:800;color:#fff;
+    text-decoration:none;margin:6px 0 4px;
+  }
+  .contact a{color:var(--green-bright);}
+  .contact .hours{color:#cddbe4;}
+  .contact .label{text-transform:uppercase;letter-spacing:2px;font-size:.72rem;color:#8ba4b3;margin-top:20px;margin-bottom:4px;}
+  .socbtn{
+    display:inline-block;margin-top:10px;text-decoration:none;
+    border:1px solid var(--line);padding:9px 16px;border-radius:6px;color:#fff;font-weight:600;font-size:.9rem;
+  }
+
+  footer{
+    background:#081722;color:#8ba4b3;text-align:center;
+    padding:26px 20px;font-size:.82rem;line-height:1.7;
+  }
+  footer .reg{color:#5f7684;}
+
+  @media(max-width:640px){
+    .hero{padding:52px 18px 46px;}
+    .hero h1{font-size:1.75rem;}
+    .callbar .name{font-size:.82rem;}
+    .contact .inner{grid-template-columns:1fr;gap:24px;}
+    .btn{width:100%;text-align:center;}
+    .trust{gap:14px 24px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="name">Pro-Green Cleaning &amp; Disaster Specialists<span>Warwick, RI</span></div>
+  <a class="call" href="tel:+14015881155">Call (401) 588-1155</a>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Warwick, Rhode Island</div>
+    <h1>When water, fire, or mold hits your property, we make it right.</h1>
+    <p class="lead">Full-service restoration and general contracting for homes and businesses — from water and fire damage to mold, biohazard cleanup, and rebuild.</p>
+    <div class="emerg">Available 24/7 for emergency services</div>
+    <div class="btnrow">
+      <a class="btn primary" href="tel:+14015881155">Call (401) 588-1155</a>
+      <a class="btn ghost" href="mailto:care@progreencds.com">Email Us</a>
+    </div>
+  </div>
+</header>
+
+<div class="trust">
+  <div><span class="big">5.0 <span class="stars">★★★★★</span></span><small>19 Google reviews</small></div>
+  <div><span class="big">24/7</span><small>Emergency response</small></div>
+  <div><span class="big">Free</span><small>Inspections</small></div>
+  <div><span class="big">GC-46198</span><small>RI Contractor Reg. #</small></div>
+</div>
+
+<section class="pad">
+  <div class="inner">
+    <h2>What we do</h2>
+    <p class="sub">Pro-Green provides many different home and commercial services. Let us know today how we can help you.</p>
+    <div class="services">
+      <div class="svc"><h3>Water Damage Restoration</h3><p>Cleanup, drying, and restoration after leaks, floods, and burst pipes.</p></div>
+      <div class="svc"><h3>Fire &amp; Soot Restoration</h3><p>Recovery from fire, smoke, and soot damage.</p></div>
+      <div class="svc"><h3>Mold Remediation</h3><p>Removal and remediation of mold in residential and commercial spaces.</p></div>
+      <div class="svc"><h3>Biohazard Cleanup</h3><p>Specialized cleanup for biohazard situations.</p></div>
+      <div class="svc"><h3>Residential &amp; Commercial Cleaning</h3><p>Cleaning services for homes and businesses.</p></div>
+      <div class="svc"><h3>Trash Removal</h3><p>Debris and trash removal.</p></div>
+      <div class="svc"><h3>General Contracting</h3><p>And more — general contracting to put things back together.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" style="padding-top:0;">
+  <div class="inner">
+    <div class="insurance">
+      <h2>We work with your insurance provider</h2>
+      <p>We understand that dealing with an insurance company can be a daunting task, especially in the aftermath of a disaster. Our team of experts has industry knowledge specific to restoration insurance claims and can do the paperwork and correspondence for you.</p>
+      <p>We'll also work with your insurance adjuster to make sure all the damages are properly documented and that you're getting the full coverage you're entitled to.</p>
+      <div class="need">All we need is your adjuster's name, phone number, and claim number.</div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" style="padding-top:0;">
+  <div class="inner">
+    <h2>Examples of our work</h2>
+    <p class="sub">A look at some of the jobs we've handled.</p>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Example of Pro-Green restoration work">
+      <img src="photo2.jpg" alt="Example of Pro-Green restoration work">
+      <img src="photo3.jpg" alt="Example of Pro-Green restoration work">
+      <img src="photo4.jpg" alt="Example of Pro-Green restoration work">
+    </div>
+  </div>
+</section>
+
+<section class="pad contact">
+  <div class="inner">
+    <div>
+      <h2>Get in touch</h2>
+      <p style="color:#cddbe4;">Free inspections. Call us or send an email and tell us how we can help.</p>
+      <a class="telbig" href="tel:+14015881155">(401) 588-1155</a><br>
+      <a href="mailto:care@progreencds.com">care@progreencds.com</a>
+      <div class="label">On the web</div>
+      <a class="socbtn" href="https://www.progreencds.com/" target="_blank" rel="noopener">Website</a>
+      <a class="socbtn" href="https://www.facebook.com/progreencds" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <div>
+      <div class="label">Location</div>
+      <p>4 Smith Street<br>Warwick, RI 02886</p>
+      <div class="label">Office Hours</div>
+      <p class="hours">Monday — Friday<br>8am — 6pm</p>
+      <p class="hours" style="margin-top:10px;color:#ffd7cd;">Available 24/7 for emergency services.</p>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Here&#x27;s a screenshot-worthy trick: press a bare hand flat against the base of a closet wall. Cool and slightly damp when the rest is warm often means moisture hiding behind the drywall. Not sure? We&#x27;ll come look.</p></div></div></article><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Warwick&#x27;s shoreline homes take a beating from salt air off the bay, and older houses inland carry decades of settling and layered repairs. We love this town&#x27;s mix, and we know how to clean and rebuild for both.</p></div></div></article><article class="post"><div style="background:#ffffff;border:1px solid var(--line,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--line,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call Pro-Green Cleaning &amp; Disaster Specialists and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+  © Pro-Green Cleaning &amp; Disaster Specialists<br>
+  <span class="reg">Contractor Registration # GC-46198</span><br>
+  Site by Atlas Inc
+</footer>
+
+</body>
+</html>
