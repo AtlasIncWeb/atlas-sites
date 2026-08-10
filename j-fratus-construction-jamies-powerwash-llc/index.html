@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J Fratus Construction &amp; Jamie's Powerwash LLC — General Contractor in Coventry, RI</title>
+<meta name="description" content="Family-run general contractor and pressure washing specialists in Coventry, Rhode Island. Construction, decks, power washing, restoration and more. Call (401) 837-4545.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<style>
+  :root{
+    --steel:#1f3a4d;
+    --slate:#2c4a5e;
+    --spray:#3d9bd1;
+    --sand:#e8e2d6;
+    --paper:#f6f4ef;
+    --ink:#16232b;
+    --gold:#d9a441;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+  }
+  a{color:inherit;}
+  .callbar{
+    position:sticky;top:0;z-index:50;
+    background:var(--steel);
+    color:#fff;
+    display:flex;justify-content:space-between;align-items:center;
+    gap:.5rem;
+    padding:.55rem 1rem;
+    flex-wrap:wrap;
+  }
+  .callbar .name{font-weight:700;font-size:.95rem;letter-spacing:.02em;}
+  .callbar .name span{color:var(--spray);}
+  .callbar a.phone{
+    background:var(--gold);
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:700;
+    padding:.4rem .85rem;
+    border-radius:4px;
+    white-space:nowrap;
+  }
+  .hero{
+    position:relative;
+    background:linear-gradient(rgba(20,35,43,.82),rgba(20,35,43,.72)),url('photo1.jpg') center/cover no-repeat;
+    color:#fff;
+    padding:4.5rem 1.25rem 4rem;
+    text-align:center;
+  }
+  .hero .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:.8rem;
+    color:var(--spray);
+    font-weight:700;
+    margin-bottom:1rem;
+  }
+  .hero h1{
+    font-size:2.1rem;
+    line-height:1.15;
+    max-width:16ch;
+    margin:0 auto .9rem;
+    font-weight:800;
+  }
+  .hero p.lead{
+    font-size:1.08rem;
+    max-width:44ch;
+    margin:0 auto 1.8rem;
+    color:#e3ecf1;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:700;
+    padding:.85rem 1.6rem;
+    border-radius:5px;
+    font-size:1.1rem;
+  }
+  .btn.outline{
+    background:transparent;
+    border:2px solid var(--spray);
+    color:#fff;
+    margin-left:.5rem;
+  }
+  .trust{
+    background:var(--steel);
+    color:#fff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:1.5rem 2.5rem;
+    padding:1.6rem 1rem;
+    border-top:3px solid var(--gold);
+  }
+  .trust div{text-align:center;min-width:130px;}
+  .trust .big{font-size:1.6rem;font-weight:800;color:var(--gold);display:block;}
+  .trust .lbl{font-size:.82rem;letter-spacing:.04em;color:#cdd8de;text-transform:uppercase;}
+  .stars{color:var(--gold);letter-spacing:2px;}
+  section.block{padding:3rem 1.25rem;max-width:1000px;margin:0 auto;}
+  h2{
+    font-size:1.6rem;
+    color:var(--steel);
+    margin-bottom:.4rem;
+    font-weight:800;
+  }
+  .rule{width:60px;height:4px;background:var(--gold);margin-bottom:1.4rem;border-radius:2px;}
+  .intro p{max-width:60ch;font-size:1.05rem;margin-bottom:1rem;}
+  .quote{
+    border-left:4px solid var(--spray);
+    background:#fff;
+    padding:1rem 1.25rem;
+    font-style:italic;
+    color:var(--slate);
+    max-width:60ch;
+    margin-top:1.2rem;
+  }
+  .quote span{display:block;font-style:normal;font-size:.82rem;color:#7a8790;margin-top:.5rem;letter-spacing:.03em;}
+  .services{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+    gap:1rem;
+  }
+  .svc{
+    background:#fff;
+    border:1px solid var(--sand);
+    border-top:3px solid var(--spray);
+    border-radius:5px;
+    padding:1.1rem 1.15rem;
+  }
+  .svc h3{font-size:1.05rem;color:var(--steel);margin-bottom:.35rem;}
+  .svc p{font-size:.92rem;color:#455661;}
+  .svclist{
+    background:var(--sand);
+  }
+  .chips{
+    display:flex;flex-wrap:wrap;gap:.5rem;max-width:900px;margin-top:1rem;
+  }
+  .chips span{
+    background:#fff;
+    border:1px solid #d7d0c1;
+    padding:.4rem .8rem;
+    border-radius:20px;
+    font-size:.9rem;
+    color:var(--slate);
+    font-weight:600;
+  }
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:.75rem;
+  }
+  .gallery img{width:100%;height:230px;object-fit:cover;border-radius:5px;display:block;}
+  .contact{
+    background:var(--steel);
+    color:#fff;
+  }
+  .contact .block{padding-top:3rem;padding-bottom:3rem;}
+  .contact h2{color:#fff;}
+  .contact a.bigphone{
+    display:inline-block;
+    font-size:2rem;
+    font-weight:800;
+    color:var(--gold);
+    text-decoration:none;
+    margin:.4rem 0 1.2rem;
+  }
+  .cinfo{display:flex;flex-wrap:wrap;gap:2rem;font-size:1rem;}
+  .cinfo div{min-width:200px;}
+  .cinfo strong{display:block;color:var(--spray);text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;margin-bottom:.3rem;}
+  .cinfo a{color:#e3ecf1;}
+  .social a{
+    display:inline-block;
+    margin-right:.75rem;
+    color:#fff;
+    border:1px solid var(--spray);
+    padding:.35rem .8rem;
+    border-radius:4px;
+    text-decoration:none;
+    font-size:.9rem;
+    margin-top:.6rem;
+  }
+  footer{
+    background:var(--ink);
+    color:#9fb0ba;
+    text-align:center;
+    padding:1.5rem 1rem;
+    font-size:.85rem;
+  }
+  footer span{display:block;}
+  @media(max-width:560px){
+    .hero h1{font-size:1.65rem;}
+    .btn.outline{margin-left:0;margin-top:.7rem;}
+    .callbar .name{font-size:.85rem;}
+    .cinfo{gap:1.2rem;}
+  }
+</style>
+</head>
+<body>
+
+<div class="callbar">
+  <div class="name">J Fratus Construction · <span>Jamie's Powerwash LLC</span></div>
+  <a class="phone" href="tel:14018374545">Call (401) 837-4545</a>
+</div>
+
+<header class="hero">
+  <div class="eyebrow">Coventry, Rhode Island</div>
+  <h1>No job is too big or too small</h1>
+  <p class="lead">A family-run general contractor and pressure washing specialists serving Rhode Island homes and businesses. Call for a free quote today.</p>
+  <a class="btn" href="tel:14018374545">Call for a Free Quote</a>
+  <a class="btn outline" href="#services">See What We Do</a>
+</header>
+
+<div class="trust">
+  <div>
+    <span class="big">5.0</span>
+    <span class="lbl"><span class="stars">★★★★★</span><br>34 Google reviews</span>
+  </div>
+  <div>
+    <span class="big">Insured &amp; Bonded</span>
+    <span class="lbl">in their own words</span>
+  </div>
+  <div>
+    <span class="big">One Stop</span>
+    <span class="lbl">Do-it-all contractor</span>
+  </div>
+</div>
+
+<section class="block intro">
+  <h2>Quality work you can trust</h2>
+  <div class="rule"></div>
+  <p>Based right here in Coventry, we work closely with Rhode Island clients to find the most cost-effective solutions — from full construction and remodeling to power washing, deck work, restoration and everyday home repair. We are your one stop solution for home improvements.</p>
+  <div class="quote">
+    "Our goal is to provide our customers with a professional level of service that offers superior customer satisfaction with quality results that look better and last longer."
+    <span>— J Fratus Construction · Jamie's Powerwash LLC, in their own words</span>
+  </div>
+</section>
+
+<section class="block" id="services">
+  <h2>What we do</h2>
+  <div class="rule"></div>
+  <div class="services">
+    <div class="svc">
+      <h3>Construction Services</h3>
+      <p>Maintenance of your home or office keeps things operating their best and prevents major problems.</p>
+    </div>
+    <div class="svc">
+      <h3>Deck Building</h3>
+      <p>Enhance your home's beauty and functionality with a professionally crafted deck built to last.</p>
+    </div>
+    <div class="svc">
+      <h3>Deck Staining</h3>
+      <p>A great way to enhance the natural beauty of your wood deck — and a cost-effective alternative to replacing a deck that's showing its age.</p>
+    </div>
+    <div class="svc">
+      <h3>Demolition</h3>
+      <p>Professional home demolition, interior gut-outs, and full residential teardown services across Rhode Island. Cleanup-ready.</p>
+    </div>
+    <div class="svc">
+      <h3>Disaster Restoration</h3>
+      <p>Fast, reliable restoration for homes and businesses affected by water, fire, storm, or mold damage.</p>
+    </div>
+    <div class="svc">
+      <h3>Power Washing</h3>
+      <p>Our pressure washing and cleaning professionals truly value each and every one of our customers.</p>
+    </div>
+    <div class="svc">
+      <h3>Soft Washing</h3>
+      <p>Providing the highest level of soft washing services for our Rhode Island residential and commercial customers.</p>
+    </div>
+    <div class="svc">
+      <h3>Painting Services</h3>
+      <p>Our technical painting ability is where we shine — and our customers appreciate the other things we do that make a difference.</p>
+    </div>
+    <div class="svc">
+      <h3>Flooring Services</h3>
+      <p>Expert installation, refinishing, and repair for hardwood, laminate, vinyl, tile, and more.</p>
+    </div>
+    <div class="svc">
+      <h3>Handyman Services</h3>
+      <p>From fixing leaky faucets and patching drywall to installing fixtures and routine upkeep that keeps your property in excellent condition.</p>
+    </div>
+    <div class="svc">
+      <h3>Gutter Cleaning</h3>
+      <p>The highest level of gutter cleaning for Rhode Island residential and commercial customers.</p>
+    </div>
+    <div class="svc">
+      <h3>Dryer Vent &amp; Duct Cleaning</h3>
+      <p>Fast, affordable dryer vent cleaning to protect your home — plus duct cleaning to clear built-up dust and allergens.</p>
+    </div>
+    <div class="svc">
+      <h3>Estate Cleanouts</h3>
+      <p>Help preparing a home for sale, managing a loved one's belongings, or simply reclaiming space.</p>
+    </div>
+    <div class="svc">
+      <h3>Window Cleaning</h3>
+      <p>Essential maintenance that enhances the appearance and functionality of residential and commercial properties.</p>
+    </div>
+    <div class="svc">
+      <h3>Property Maintenance</h3>
+      <p>Comprehensive Rhode Island property maintenance to keep residential or commercial buildings in top shape.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block svclist">
+  <h2>Every service, in one call</h2>
+  <div class="rule"></div>
+  <div class="chips">
+    <span>Construction</span>
+    <span>Deck Building</span>
+    <span>Deck Staining</span>
+    <span>Demolition</span>
+    <span>Disaster Restoration</span>
+    <span>Dryer Vent Cleaning</span>
+    <span>Duct Cleaning</span>
+    <span>Estate Cleanouts</span>
+    <span>Flooring</span>
+    <span>Gutter Cleaning</span>
+    <span>Handyman</span>
+    <span>Painting</span>
+    <span>Power Washing</span>
+    <span>Property Maintenance</span>
+    <span>Soft Washing</span>
+    <span>Window Cleaning</span>
+  </div>
+</section>
+
+<section class="block">
+  <h2>Our work</h2>
+  <div class="rule"></div>
+  <div class="gallery">
+    <img src="photo1.jpg" alt="J Fratus Construction and Jamie's Powerwash job in progress">
+    <img src="photo4.jpg" alt="Completed work by J Fratus Construction">
+    <img src="photo3.jpg" alt="J Fratus Construction and Jamie's Powerwash branded vehicle">
+    <img src="photo2.jpg" alt="Interior worked on by J Fratus Construction">
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="block">
+    <h2>Get a free quote</h2>
+    <div class="rule"></div>
+    <a class="bigphone" href="tel:14018374545">(401) 837-4545</a>
+    <div class="cinfo">
+      <div>
+        <strong>Location</strong>
+        10 Old North Rd<br>Coventry, RI 02816
+      </div>
+      <div>
+        <strong>Email</strong>
+        <a href="mailto:doitallcontractorri@gmail.com">doitallcontractorri@gmail.com</a>
+      </div>
+      <div>
+        <strong>Online</strong>
+        <a href="http://www.jamiespowerwash.com/">jamiespowerwash.com</a>
+      </div>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=100057073014846">Facebook</a>
+      <a href="https://www.instagram.com/jamiespowerwashconstruction/">Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section style="max-width:1000px;margin:0 auto;padding:64px 24px;font-family:inherit;color:var(--ink,#1a1a1a)"><p style="text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;opacity:.6;margin:0 0 8px">Content</p><h2 style="font-family:inherit;font-size:clamp(24px,4.4vw,32px);font-weight:800;letter-spacing:-.02em;margin:0 0 24px">Three posts we wrote for you</h2><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;text-align:left"><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--sand,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_01.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--sand,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Facebook</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Most people don&#x27;t realize how fast salt air off Narragansett Bay dulls a house. That gray film on north-facing walls isn&#x27;t just dirt, it&#x27;s mildew feeding on coastal moisture. A proper wash resets it.</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--sand,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_02.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--sand,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Quick summer deck check: press a coin into the board edges. If the wood dents easily, moisture got in and it&#x27;s softening. Warwick&#x27;s humid August is prime time to catch it early. Want a second set of eyes?</p></div></div></article><article class="post"><div style="background:var(--paper,#ffffff);border:1px solid var(--sand,rgba(0,0,0,.10));border-radius:14px;overflow:hidden"><img class="pimg" src="post_03.jpg" alt="Sample post" loading="lazy" style="display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:var(--sand,rgba(0,0,0,.10))"><div style="padding:16px 18px 20px"><p style="margin:0 0 8px;font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;opacity:.55">Post idea · Instagram</p><p style="margin:0;font-size:14px;line-height:1.62;opacity:.75">Hiring local isn&#x27;t just nice — it&#x27;s better. Call J Fratus Construction-Jamies Powerwash llc and you get a neighbor who actually answers the phone and shows up. Proudly Warwick.</p></div></div></article></div></section><footer>
+  <span>© J Fratus Construction · Jamie's Powerwash LLC — Coventry, Rhode Island</span>
+  <span>Site by Atlas Inc</span>
+</footer>
+
+</body>
+</html>
